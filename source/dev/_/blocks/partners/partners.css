@@ -20,3 +20,12 @@
 .partners__item img {
   mix-blend-mode: multiply;
 }
+
+@media screen and (max-width: 1280px) {
+  .partners__title {
+    margin-bottom: 40px;
+  }
+  .partners__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

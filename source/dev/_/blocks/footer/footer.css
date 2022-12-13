@@ -91,3 +91,9 @@
 .footer__panel a:hover {
   border-color: transparent;
 }
+
+@media screen and (max-width: 1280px) {
+  .footer__nav {
+    max-width: 300px;
+  }
+}

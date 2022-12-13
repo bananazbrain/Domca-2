@@ -18,6 +18,10 @@
   max-width: 223px;
   margin-bottom: 32px;
 }
+.catalog__img picture, .catalog__img img {
+  width: 100%;
+  height: 100%;
+}
 .catalog__name {
   font-size: 17px;
   line-height: 24px;
@@ -39,4 +43,26 @@
   max-width: 246px;
   min-height: 72px;
   margin-top: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .catalog {
+    padding: 40px 0 60px;
+  }
+  .catalog__title {
+    margin-bottom: 50px;
+  }
+  .catalog__list {
+    gap: 16px;
+  }
+  .catalog__img {
+    max-width: 190px;
+    margin-bottom: 25px;
+  }
+  .catalog__text {
+    min-height: 120px;
+  }
+  .catalog__btn {
+    min-height: 66px;
+  }
 }

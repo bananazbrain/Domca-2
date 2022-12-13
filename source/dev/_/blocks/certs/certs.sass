@@ -2,15 +2,18 @@
 	padding: 50px 0 45px
 	&__slider
 		padding-top: 50px
+		transition: .4s
 		&-wrap
 			height: 578px
+			transition: .4s
 			align-items: center
 		&-slide
 			width: 275px
 			height: 402px
 			border-radius: var(--border)
-			transition: .3s
+			transition: .4s
 			overflow: hidden
+			cursor: pointer
 			&.swiper-slide-active
 				width: 404px
 				height: 578px
@@ -29,8 +32,27 @@
 	&__pagination
 		margin-top: 28px
 
-@media screen and (max-width: 1220px)
-	// .certs
+@media screen and (max-width: 1280px)
+	.certs
+		&__slider
+			padding-top: 40px
+			&-wrap
+				height: 490px
+			&-slide
+				width: 240px
+				height: 360px
+				&.swiper-slide-active
+					width: 340px
+					height: 490px
+		&__arrows
+			top: 0
+			left: 0
+			max-width: 130px
+			margin-top: 30px
+			margin-left: auto
+			margin-right: auto
+			position: relative
+			transform: none
 
 @media screen and (max-width: 992px)
 	// .certs

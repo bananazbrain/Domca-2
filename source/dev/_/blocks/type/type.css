@@ -20,7 +20,7 @@
   text-align: center;
 }
 .type__img {
-  max-height: 367px;
+  height: 367px;
   margin-bottom: 26px;
 }
 .type__name {
@@ -29,4 +29,19 @@
 }
 .type__text {
   line-height: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+  .type__title {
+    margin-bottom: 40px;
+  }
+  .type__item {
+    width: calc( 50% - 10px );
+  }
+  .type__img {
+    height: 300px;
+  }
+  .type__text br {
+    display: none;
+  }
 }

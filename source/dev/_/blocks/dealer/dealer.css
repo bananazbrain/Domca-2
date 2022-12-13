@@ -8,6 +8,10 @@
   width: 100%;
   max-width: 438px;
 }
+.dealer__img picture, .dealer__img img {
+  width: 100%;
+  height: 100%;
+}
 .dealer__info {
   width: calc( 100% - 438px );
   padding-left: 66px;
@@ -45,4 +49,28 @@
 .dealer__bottom picture, .dealer__bottom img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .dealer {
+    padding: 60px 0;
+  }
+  .dealer__img {
+    max-width: 410px;
+  }
+  .dealer__info {
+    width: calc( 100% - 410px );
+    margin-top: 0;
+    padding-left: 40px;
+  }
+  .dealer__title {
+    margin-bottom: 30px;
+  }
+  .dealer__title u {
+    display: block;
+  }
+  .dealer__btn {
+    min-height: 100px;
+    margin-top: 45px;
+  }
 }

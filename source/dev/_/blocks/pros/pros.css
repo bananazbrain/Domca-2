@@ -30,3 +30,15 @@
 .pros__text {
   line-height: 25px;
 }
+
+@media screen and (max-width: 1280px) {
+  .pros__title u {
+    display: block;
+  }
+  .pros__list {
+    padding: 0;
+  }
+  .pros__img {
+    height: 120px;
+  }
+}

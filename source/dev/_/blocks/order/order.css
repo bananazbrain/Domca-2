@@ -57,3 +57,30 @@
   font-weight: 500;
   padding-left: 12px;
 }
+
+@media screen and (max-width: 1280px) {
+  .order {
+    padding: 50px 0 60px;
+  }
+  .order__title {
+    margin-bottom: 10px;
+  }
+  .order__subtitle {
+    margin-bottom: 25px;
+  }
+  .order__form {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order__fields {
+    gap: 26px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .order__field:last-child {
+    grid-column: 1/3;
+  }
+  .order__call-title {
+    margin-bottom: 20px;
+  }
+}

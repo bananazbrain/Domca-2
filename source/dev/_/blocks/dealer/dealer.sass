@@ -5,6 +5,9 @@
 	&__img
 		width: 100%
 		max-width: 438px
+		picture, img
+			width: 100%
+			height: 100%
 	&__info
 		width: calc( 100% - 438px )
 		padding-left: 66px
@@ -38,8 +41,22 @@
 			width: 100%
 			height: 100%
 
-@media screen and (max-width: 1220px)
-	// .dealer
+@media screen and (max-width: 1280px)
+	.dealer
+		padding: 60px 0
+		&__img
+			max-width: 410px
+		&__info
+			width: calc( 100% - 410px )
+			margin-top: 0
+			padding-left: 40px
+		&__title
+			margin-bottom: 30px
+			u
+				display: block
+		&__btn
+			min-height: 100px
+			margin-top: 45px
 
 @media screen and (max-width: 992px)
 	// .dealer

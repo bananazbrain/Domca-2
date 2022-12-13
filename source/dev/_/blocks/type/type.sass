@@ -16,7 +16,7 @@
 		align-items: center
 		text-align: center
 	&__img
-		max-height: 367px
+		height: 367px
 		margin-bottom: 26px
 	&__name
 		line-height: 32px
@@ -24,8 +24,17 @@
 	&__text
 		line-height: 25px
 
-@media screen and (max-width: 1220px)
-	// .type
+@media screen and (max-width: 1280px)
+	.type
+		&__title
+			margin-bottom: 40px
+		&__item
+			width: calc( 50% - 10px )
+		&__img
+			height: 300px
+		&__text
+			br
+				display: none
 
 @media screen and (max-width: 992px)
 	// .type

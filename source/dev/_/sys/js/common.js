@@ -71,10 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
   if (certsSlider) {
     let certsSliderSwiper = new Swiper(certsSlider, {
       slidesPerView: 'auto',
-      initialSlide: 1,
       spaceBetween: 100,
-      slidesOffsetBefore: 390,
-      slidesOffsetAfter: 515,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      loop: true,
+      slidesOffsetBefore: -65,
       speed: 1000,
       navigation: {
         prevEl: '.certs__arrow.swiper-button-prev',
@@ -85,6 +86,16 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'bullets',
         clickable: true,
       },
+      breakpoints: {
+        992: {
+          spaceBetween: 60,
+          slidesOffsetBefore: -50,
+        },
+        1281: {
+          spaceBetween: 100,
+          slidesOffsetBefore: -65,
+        }
+      }
     });
   }
 
