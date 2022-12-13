@@ -8,6 +8,7 @@
   font-family: var(--ff-main)
   transition: var(--transition)
   border-radius: var(--border-sm)
+  text-transform: uppercase
   background: transparent
   display: flex
   align-items: center
@@ -21,3 +22,9 @@
     box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0.55)
     &:hover
       box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0)
+  &.--b-red
+    color: var(--red)
+    border: 1px solid var(--red)
+    &:hover
+      color: var(--white)
+      background: var(--red)

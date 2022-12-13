@@ -1,16 +1,42 @@
-:root {
-  --ff-main: "TT Norms", sans-serif;
-  --ff-title: "Russo One", sans-serif;
-  --fz-main: 16px;
-  --black: #000;
-  --black-title: #303030;
-  --white: #FFF;
-  --gray: #F6F6F6;
-  --dark-gray: #7B7B7B;
-  --red: #C20009;
-  --green: #006B3D;
-  --transition: .3s ease-in-out;
-  --border-sm: 8px;
-  --border: 16px;
-  --shadow: 0px 12px 76px rgba(0, 0, 0, 0.07);
+.catalog {
+  padding: 50px 0;
+}
+.catalog__title {
+  margin-bottom: 80px;
+}
+.catalog__list {
+  gap: 21px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.catalog__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.catalog__img {
+  max-width: 223px;
+  margin-bottom: 32px;
+}
+.catalog__name {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 17px;
+  font-family: var(--ff-title);
+}
+.catalog__text {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.catalog__temp {
+  margin-bottom: 34px;
+}
+.catalog__temp strong {
+  margin-top: 6px;
+  display: block;
+}
+.catalog__btn {
+  max-width: 246px;
+  min-height: 72px;
+  margin-top: auto;
 }

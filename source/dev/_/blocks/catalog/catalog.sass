@@ -1,13 +1,41 @@
-@import ../../sys/sass/vars
-
-// .catalog
+.catalog
+	padding: 50px 0
+	&__title
+		margin-bottom: 80px
+	&__list
+		gap: 21px
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+	&__item
+		display: flex
+		align-items: center
+		flex-direction: column
+	&__img
+		max-width: 223px
+		margin-bottom: 32px
+	&__name
+		font-size: 17px
+		line-height: 24px
+		margin-bottom: 17px
+		font-family: var(--ff-title)
+	&__text
+		line-height: 24px
+		margin-bottom: 24px
+	&__temp
+		margin-bottom: 34px
+		strong
+			margin-top: 6px
+			display: block
+	&__btn
+		max-width: 246px
+		min-height: 72px
+		margin-top: auto
 
 @media screen and (max-width: 1220px)
 	// .catalog
-		
+
 @media screen and (max-width: 992px)
 	// .catalog
-		
+
 @media screen and (max-width: 767px)
 	// .catalog
-		
