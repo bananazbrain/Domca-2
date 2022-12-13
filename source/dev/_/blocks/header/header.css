@@ -41,9 +41,6 @@
   color: var(--dark-gray);
   position: relative;
 }
-.header__time strong {
-  font-weight: 500;
-}
 .header__time:before {
   top: 50%;
   width: 6px;

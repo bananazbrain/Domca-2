@@ -6,3 +6,43 @@ include ../../blocks/header/header
 +style('footer', 'blocks')
 include ../../blocks/footer/footer
 
+//- intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+
+//- quality 
++style('quality', 'blocks')
+include ../../blocks/quality/quality
+
+//- catalog 
++style('catalog', 'blocks')
+include ../../blocks/catalog/catalog
+
+//- dealer 
++style('dealer', 'blocks')
+include ../../blocks/dealer/dealer
+
+//- pros 
++style('pros', 'blocks')
+include ../../blocks/pros/pros
+
+//- why 
++style('why', 'blocks')
+include ../../blocks/why/why
+
+//- type 
++style('type', 'blocks')
+include ../../blocks/type/type
+
+//- partners 
++style('partners', 'blocks')
+include ../../blocks/partners/partners
+
+//- certs 
++style('certs', 'blocks')
+include ../../blocks/certs/certs
+
+//- order 
++style('order', 'blocks')
+include ../../blocks/order/order
+

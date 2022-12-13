@@ -1,0 +1,23 @@
+.btn
+  z-index: 1
+  width: 100%
+  padding: 10px
+  font-weight: 700
+  letter-spacing: 1.3px
+  font-size: var(--fz-main)
+  font-family: var(--ff-main)
+  transition: var(--transition)
+  border-radius: var(--border-sm)
+  background: transparent
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  position: relative
+  cursor: pointer
+  &.--red
+    color: var(--white)
+    background: var(--red)
+    box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0.55)
+    &:hover
+      box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0)

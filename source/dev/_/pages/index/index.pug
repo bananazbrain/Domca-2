@@ -4,4 +4,50 @@ block vars
 		title = "DOMCA - Сохраняем тепло"
 
 block content
-	
+
+	.side-panel
+		.side-panel__wrap
+			.side-panel__close
+			.side-panel__list
+				a.side-panel__item(href="")
+					.side-panel__icon
+						img(src="_/uploads/icons/price.svg", alt="")
+					.side-panel__text Получить Прайс
+				a.side-panel__item(href="")
+					.side-panel__icon
+						img(src="_/uploads/icons/tel.svg", alt="")
+					.side-panel__text Перезвоните мне
+				a.side-panel__item(href="")
+					.side-panel__icon
+						img(src="_/uploads/icons/dealer.svg", alt="")
+					.side-panel__text Стать Дилером
+				a.side-panel__item(href="https://wa.me/")
+					.side-panel__icon
+						img(src="_/uploads/icons/wh.svg", alt="")
+					.side-panel__text WhatsApp
+
+	+style('intro', 'blocks')
+	.intro.bg
+		.case
+			.intro__wrap.row
+				.intro__info
+					.intro__title.h1 #[h1 Станьте дилером теплоносителя #[u DOMCA] #[br]в вашем городе]
+					.intro__list.list-line
+						ul
+							li Без посредников - напрямую от производителя
+							li Гарантия качества
+							li Маркетинговая поддержка
+							li Высокая маржинальность
+					.intro__price
+						.intro__btn.btn.--red ПОЛУЧИТЬ ПРАЙС + КОММЕРЧЕСКОЕ
+						.intro__desc
+							.intro__desc-img
+								img(src="_/uploads/calc.png", alt="")
+							.intro__desc-text Оставьте заявку и мы #[br]вышлем вам всю информацию #[br]на почту #[strong в течение 5 минут]
+				.intro__img
+					img(src="_/uploads/intro-img.png" alt="" width="645" height="694")
+		.intro__bg.bg-img
+			img(src="_/uploads/intro-bg.jpg" alt="" width="1920" height="784")
+		.intro__bottom
+			img(src="_/uploads/intro-bottom.jpg" alt="" width="1920" height="138")
+

@@ -56,6 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  let sidePanel = document.querySelector('.side-panel');
+  let sidePanelClose = document.querySelector('.side-panel__close');
+
+  if (sidePanel) {
+    sidePanelClose.addEventListener('click', () => {
+      sidePanel.classList.add('--hide');
+    })
+  }
+
   // SLIDER
   let sampleSlider = document.querySelector('.sample__slider');
 

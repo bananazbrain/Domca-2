@@ -3,12 +3,17 @@
 @import reset
 @import grid
 
-// @import ../../components/btn/btn
+@import ../../components/btn/btn
+@import ../../components/field/field
 
 // TYPOGRAPHY	
 .h1
 	font-size: 48px
 	line-height: 60px
+	font-family: var(--ff-title)
+	color: var(--black-title)
+	u
+		color: var(--red)
 
 .h2
 	font-size: 48px
@@ -75,6 +80,87 @@
 		text-transform: uppercase
 		font-family: var(--ff-title)
 		color: var(--red)
+
+.side-panel
+	z-index: 2
+	top: 50%
+	right: 0
+	width: 104px
+	opacity: 1
+	transform: translateY(-50%)
+	transition: var(--transition)
+	position: fixed
+	&__wrap
+		display: flex
+		align-items: center
+		flex-direction: column
+	&__close
+		width: 34px
+		height: 34px
+		margin-bottom: 18px
+		border-radius: 50%
+		background: var(--red)
+		transition: var(--transition)
+		position: relative
+		cursor: pointer
+		&:before
+			top: 50%
+			left: 50%
+			width: 12px
+			height: 12px
+			transform: translate(-50%, -50%)
+			background: url('../../uploads/icons/close.svg') no-repeat
+			background-size: contain
+			position: absolute
+			content: ""
+		&:hover
+			background: darken(#C20009, 5%)
+	&__list
+		border-radius: var(--border) 0 0 var(--border)
+		overflow: hidden
+	&__item
+		width: 100%
+		padding: 20px 13px
+		border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		flex-direction: column
+		background: var(--red)
+		color: var(--white)
+		&:last-child
+			border-bottom: none
+		&:hover
+			background: darken(#C20009, 5%)
+	a[href^="https://wa.me/"]
+		background: #50C158
+		&:hover
+			background: darken(#50C158, 5%)
+	&__icon
+		margin-bottom: 8px
+	&__text
+		font-size: 12px
+		font-weight: 500
+		line-height: 16px
+	&.--hide
+		opacity: 0
+
+.list-line
+	ul
+		flex-direction: column
+		li
+			padding-left: 40px
+			color: var(--black-title)
+			position: relative
+			&:before
+				left: 0
+				top: 12px
+				width: 30px
+				height: 2px
+				background: var(--red)
+				position: absolute
+				content: ""
 
 // ANIMATION
 .fadeIn
