@@ -1,13 +1,54 @@
-@import ../../sys/sass/vars
-
-// .order
+.order
+	padding: 50px 0
+	&__title
+		margin-bottom: 24px
+	&__subtitle
+		font-size: 24px
+		line-height: 38px
+		margin-bottom: 36px
+	&__form
+		padding: 48px
+		background: var(--white)
+		box-shadow: var(--shadow)
+		border-radius: var(--border)
+	&__fields
+		gap: 40px
+		display: grid
+		grid-template-columns: 328px 328px 350px
+	&__btn
+		min-height: 91px
+	&__policy
+		font-size: 14px
+		margin-top: 24px
+		color: var(--dark-gray)
+		text-align: center
+		a
+			font-size: 14px
+			color: var(--red)
+			border-bottom: 1px solid var(--red)
+			&:hover
+				border-color: transparent
+	&__call
+		padding-top: 36px
+		&-title
+			margin-bottom: 26px
+		&-wrap
+			max-width: 340px
+			margin: 0 auto
+			align-items: center
+			justify-content: center
+		&-icon
+			width: 34px
+		&-text
+			font-size: 32px
+			font-weight: 500
+			padding-left: 12px
 
 @media screen and (max-width: 1220px)
 	// .order
-		
+
 @media screen and (max-width: 992px)
 	// .order
-		
+
 @media screen and (max-width: 767px)
 	// .order
-		

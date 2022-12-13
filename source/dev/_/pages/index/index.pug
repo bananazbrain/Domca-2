@@ -252,4 +252,30 @@ block content
 		.certs__bg.bg-img
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="828")
 
+	+style('order', 'blocks')
+	.order
+		.case
+			.order__title.h2.tac #[h2 Хотите стать дилером?]
+			.order__subtitle.tac Оставьте заявку в форме ниже и мы свяжемся с вами #[br]в течение 15 минут, чтобы обсудить все детали
+			form.order__form
+				.order__fields
+					.order__field.field.--required.--name
+						.field__wrap
+							.field__icon
+								img(src="_/uploads/icons/person-gray.svg", alt="")
+							input.field__area(type="text" name="name" placeholder="Введите ваше имя")
+					.order__field.field.--required.--tel
+						.field__wrap
+							.field__icon
+								img(src="_/uploads/icons/tel-gray.svg", alt="")
+							input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
+					.order__field 
+						button.order__btn.btn.--red Хочу стать дилером
+				.order__policy Нажимая на кнопку вы соглашаетесь с #[a(href="" target="_blank") условиями обработки данных] и #[a(href="" target="_blank") политикой конфиденциальности]
+			.order__call
+				.order__call-title.h4.tac #[h4 Или позвоните нам по телефону]
+				a.order__call-wrap.row(href="tel:+7")
+					.order__call-img
+						img(src="_/uploads/tel.png", alt="" width="34" height="57")
+					.order__call-text 8 (951) 900-70-00
 

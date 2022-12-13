@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
       spaceBetween: 100,
       slidesOffsetBefore: 390,
       slidesOffsetAfter: 515,
-      speed: 900,
+      speed: 1000,
       navigation: {
         prevEl: '.certs__arrow.swiper-button-prev',
         nextEl: '.certs__arrow.swiper-button-next',
@@ -86,60 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
         clickable: true,
       },
     });
-  }
-
-  // MAP
-  let map = document.querySelector('#map');
-
-  if (map && ymaps) {
-    ymaps.ready(mapInit);
-
-    function mapInit() {
-      let mapPosition, mapPlaceholder;
-
-      mapPosition = map.getAttribute('data-map');
-      mapPosition = mapPosition.split(',');
-
-      for (let i = 0; i < mapPosition.length; i++) {
-        mapPosition[i] = Number(mapPosition[i]);
-      }
-
-      mapPlaceholder = map.getAttribute('data-map');
-      mapPlaceholder = mapPlaceholder.split(',');
-
-      let ymap = new ymaps.Map(map, {
-        center: [mapPosition[0], mapPosition[1]],
-        controls: [],
-        zoom: 16,
-      });
-
-      let placemark = new ymaps.Placemark(mapPlaceholder, {
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: '_/uploads/icons/placemark-blue.svg',
-        iconImageSize: [28, 33],
-      }, {});
-      ymap.geoObjects.add(placemark);
-
-      ymap.behaviors.disable('scrollZoom');
-
-      function setMapPostion() {
-        let dw = window.innerWidth;
-
-        if (dw > 1280) {
-          ymap.setCenter([mapPosition[0], mapPosition[1]]);
-        } else if (dw <= 1280 && dw > 767) {
-          ymap.setCenter([mapPosition[0], mapPosition[1] - -0.004]);
-        } else {
-          ymap.setCenter(mapPosition);
-        }
-      }
-
-      setMapPostion();
-      window.addEventListener('resize', () => {
-        setMapPostion();
-      });
-    }
   }
 
   // VALIDATOR
@@ -184,20 +130,6 @@ document.addEventListener('DOMContentLoaded', function () {
           lazy: true
         })
       })
-    } else if (field.classList.contains('--date')) {
-      field.area.mask = IMask(field.area, {
-        mask: Date,
-        lazy: false,
-        min: new Date(Date.now()),
-      });
-      field.area.addEventListener('input', () => {
-        if (Date.length >= 1) {
-          field.classList.add('--filled');
-        } else {
-          field.classList.remove('--filled');
-        }
-      });
-
     } else {
       field.area.addEventListener('field', () => {
       });
@@ -210,24 +142,8 @@ document.addEventListener('DOMContentLoaded', function () {
     validateForms.forEach((form) => {
       let btnSubmit = form.querySelector('.btn');
       let fieldsRequired = form.querySelectorAll('.field.--required');
-      let checksRequired = form.querySelectorAll('.check.--required');
-      let selectsRequired = form.querySelectorAll('.select.--required');
       let popupModalForm = form.querySelector('.modal__form');
       let popupSendOkAttr = form.getAttribute('data-message-ok');
-
-      // SELECT VALIDATOR
-      if (selectsRequired.length > 0) {
-
-        selectsRequired.forEach((select) => {
-          select.parse = select.querySelector('select');
-          select.error = select.querySelector('.select__value');
-          select.addEventListener('click', () => {
-            if (select.classList.contains('--error')) {
-              select.classList.remove('--error');
-            }
-          })
-        })
-      }
 
       btnSubmit.addEventListener('click', (event) => {
         let errors = 0;
@@ -254,45 +170,6 @@ document.addEventListener('DOMContentLoaded', function () {
               }
             }
 
-            if (field.classList.contains('--email')) {
-              if (!mailPattern.test(value)) {
-                errors++;
-                field.classList.add('--error');
-              } else {
-                field.classList.remove('--error');
-              }
-            }
-
-            if (field.classList.contains('--date')) {
-              if (field.area.mask.unmaskedValue.length < 10) {
-                errors++;
-                field.classList.add('--error');
-              } else {
-                field.classList.remove('--error');
-              }
-            }
-
-          })
-        }
-
-        if (checksRequired.length > 0) {
-          checksRequired.forEach((check) => {
-            if (check.input.getAttribute('checked') != 'checked') {
-              errors++;
-              check.classList.add('--error');
-            }
-            else {
-              check.classList.remove('--error');
-            }
-          })
-        }
-
-        if (selectsRequired.length > 0) {
-          selectsRequired.forEach((select) => {
-            if (!select.parse.querySelector('option[selected]')) {
-              errors++;
-              select.classList.add('--error');
-            }
           })
         }
 

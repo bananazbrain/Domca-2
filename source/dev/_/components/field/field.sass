@@ -1,1 +1,35 @@
-
+.field
+  width: 100%
+  display: block
+  position: relative
+  transition: var(--transition)
+  &__wrap
+    position: relative
+  &__icon
+    z-index: 1
+    top: 50%
+    left: 28px
+    transform: translateY(-50%)
+    position: absolute
+  &__area
+    width: 100%
+    padding: 35px 24px 35px 66px
+    background: var(--gray)
+    font-size: var(--fz-main)
+    font-family: var(--ff-main)
+    color: var(--black)
+    border: 1px solid transparent
+    border-radius: var(--border-sm)
+    transition: var(--transition)
+    position: relative
+    &::placeholder
+      opacity: 1
+      color: var(--dark-gray)
+      transition: var(--transition)
+    &:focus
+      &::placeholder
+        opacity: 0
+  &.--error
+    .field
+      &__area
+        border-color: var(--red)

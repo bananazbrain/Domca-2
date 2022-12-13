@@ -12,7 +12,7 @@
   width: 275px;
   height: 402px;
   border-radius: var(--border);
-  transition: var(--transition);
+  transition: 0.3s;
   overflow: hidden;
 }
 .certs__slider-slide.swiper-slide-active {
