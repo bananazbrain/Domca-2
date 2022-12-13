@@ -233,6 +233,10 @@ path, circle, rect, line {
 .h2 {
   font-size: 48px;
   line-height: 60px;
+  font-family: var(--ff-title);
+}
+.h2 u {
+  color: var(--red);
 }
 
 .h3 {
@@ -248,6 +252,7 @@ path, circle, rect, line {
 .h5 {
   font-size: 24px;
   line-height: 24px;
+  font-family: var(--ff-title);
 }
 
 .inner {
