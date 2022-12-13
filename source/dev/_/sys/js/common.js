@@ -65,20 +65,23 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  // SLIDER
-  let sampleSlider = document.querySelector('.sample__slider');
+  // CERTS SLIDER
+  let certsSlider = document.querySelector('.certs__slider');
 
-  if (sampleSlider) {
-    let sampleSliderSwiper = new Swiper(sampleSlider, {
-      slidesPerView: 1,
-      spaceBetween: 1,
+  if (certsSlider) {
+    let certsSliderSwiper = new Swiper(certsSlider, {
+      slidesPerView: 'auto',
+      initialSlide: 1,
+      spaceBetween: 100,
+      slidesOffsetBefore: 390,
+      slidesOffsetAfter: 515,
       speed: 900,
       navigation: {
-        prevEl: '.sample__arrow.swiper-button-prev',
-        nextEl: '.sample__arrow.swiper-button-next',
+        prevEl: '.certs__arrow.swiper-button-prev',
+        nextEl: '.certs__arrow.swiper-button-next',
       },
       pagination: {
-        el: '.sample__pagination.swiper-pagination',
+        el: '.certs__pagination.swiper-pagination',
         type: 'bullets',
         clickable: true,
       },

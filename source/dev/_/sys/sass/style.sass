@@ -192,6 +192,54 @@
 				position: absolute
 				content: ""
 
+.swiper-button-prev, .swiper-button-next
+	top: 0
+	width: 56px
+	height: 56px
+	margin-top: 0
+	border-radius: 50%
+	box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.55)
+	background: var(--red)
+	transition: var(--transition)
+	position: relative
+	svg
+		position: relative
+		path
+			stroke: var(--white)
+	&.swiper-button-disabled
+		opacity: 1
+		border: 1px solid var(--red)
+		background: transparent
+		box-shadow: none
+		svg
+			path
+				stroke: var(--red)
+	&:after
+		display: none
+	&:hover
+		box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0)
+
+.swiper-button-prev
+	svg
+		left: -2px
+
+.swiper-button-next
+	svg
+		right: -2px
+
+.swiper-pagination
+	bottom: 0 !important
+	position: relative
+	&-bullet
+		width: 10px
+		height: 10px
+		opacity: 1
+		margin: 0 8px !important
+		background: #D2D2D2
+		transition: var(--transition)
+	&-bullet-active
+		background: var(--red)
+
 // ANIMATION
 .fadeIn
 	opacity: 0
