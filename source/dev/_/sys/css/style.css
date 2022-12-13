@@ -243,6 +243,7 @@ path, circle, rect, line {
   font-size: 48px;
   line-height: 60px;
   font-family: var(--ff-title);
+  color: var(--black-title);
 }
 .h2 u {
   color: var(--red);
@@ -251,6 +252,11 @@ path, circle, rect, line {
 .h3 {
   font-size: 38px;
   line-height: 46px;
+  font-family: var(--ff-title);
+  color: var(--black-title);
+}
+.h3 u {
+  color: var(--red);
 }
 
 .h4 {
@@ -416,6 +422,24 @@ path, circle, rect, line {
   width: 30px;
   height: 2px;
   background: var(--red);
+  position: absolute;
+  content: "";
+}
+
+.list-check ul {
+  flex-direction: column;
+}
+.list-check ul li {
+  padding-left: 28px;
+  position: relative;
+}
+.list-check ul li:before {
+  left: -2px;
+  top: 2px;
+  width: 21px;
+  height: 16px;
+  background: url("../../uploads/icons/check.svg") no-repeat;
+  background-size: contain;
   position: absolute;
   content: "";
 }

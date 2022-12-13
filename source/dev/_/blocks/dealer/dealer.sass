@@ -1,13 +1,48 @@
-@import ../../sys/sass/vars
-
-// .dealer
+.dealer
+	padding: 80px 0 55px
+	&__wrap
+		align-items: flex-start
+	&__img
+		width: 100%
+		max-width: 438px
+	&__info
+		width: calc( 100% - 438px )
+		padding-left: 66px
+		margin-top: 30px
+	&__title
+		margin-bottom: 35px
+	&__subtitle
+		margin-bottom: 22px
+		color: var(--dark-gray)
+	&__list
+		ul
+			li
+				font-size: 18px
+				margin-bottom: 23px
+				&:last-child
+					margin-bottom: 0
+	&__btn
+		margin-top: 52px
+		max-width: 440px
+		min-height: 112px
+	&__bottom
+		z-index: -1
+		left: 50%
+		bottom: 0
+		width: 100%
+		height: 358px
+		transform: translateX(-50%)
+		mix-blend-mode: multiply
+		position: absolute
+		picture, img
+			width: 100%
+			height: 100%
 
 @media screen and (max-width: 1220px)
 	// .dealer
-		
+
 @media screen and (max-width: 992px)
 	// .dealer
-		
+
 @media screen and (max-width: 767px)
 	// .dealer
-		

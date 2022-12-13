@@ -19,12 +19,17 @@
 	font-size: 48px
 	line-height: 60px
 	font-family: var(--ff-title)
+	color: var(--black-title)
 	u
 		color: var(--red)
 
 .h3
 	font-size: 38px
 	line-height: 46px
+	font-family: var(--ff-title)
+	color: var(--black-title)
+	u
+		color: var(--red)
 
 .h4
 	font-size: 32px
@@ -163,6 +168,22 @@
 				width: 30px
 				height: 2px
 				background: var(--red)
+				position: absolute
+				content: ""
+
+.list-check
+	ul
+		flex-direction: column
+		li
+			padding-left: 28px
+			position: relative
+			&:before
+				left: -2px
+				top: 2px
+				width: 21px
+				height: 16px
+				background: url('../../uploads/icons/check.svg') no-repeat
+				background-size: contain
 				position: absolute
 				content: ""
 
