@@ -1,9 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Light.eot");
+  src: url("../fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Light.woff2") format("woff2"), url("../fonts/TTNorms-Light.woff") format("woff"), url("../fonts/TTNorms-Light.ttf") format("truetype"), url("../fonts/TTNorms-Light.svg#TTNorms-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Regular.eot");
+  src: url("../fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Regular.woff2") format("woff2"), url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Medium.eot");
+  src: url("../fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Medium.woff2") format("woff2"), url("../fonts/TTNorms-Medium.woff") format("woff"), url("../fonts/TTNorms-Medium.ttf") format("truetype"), url("../fonts/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Bold.eot");
+  src: url("../fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Bold.woff2") format("woff2"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype"), url("../fonts/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  --ff-main: "Roboto", sans-serif;
+  --ff-main: "TT Norms", sans-serif;
+  --ff-title: "Russo One", sans-serif;
   --fz-main: 16px;
   --black: #000;
+  --black-title: #303030;
   --white: #FFF;
+  --gray: #F6F6F6;
+  --dark-gray: #7B7B7B;
+  --red: #C20009;
+  --green: #006B3D;
   --transition: .3s ease-in-out;
+  --border-sm: 8px;
+  --border: 16px;
+  --shadow: 0px 12px 76px rgba(0, 0, 0, 0.07);
 }
 
 *, :before, :after {
@@ -152,28 +194,28 @@ path, circle, rect, line {
 }
 
 .h1 {
-  font-size: px;
-  line-height: px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .h2 {
-  font-size: px;
-  line-height: px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .h3 {
-  font-size: px;
-  line-height: px;
+  font-size: 38px;
+  line-height: 46px;
 }
 
 .h4 {
-  font-size: px;
-  line-height: px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .h5 {
-  font-size: px;
-  line-height: px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .inner {
