@@ -2,4 +2,24 @@ include ../../sys/pug/vars
 
 header.header
 	.case
-		
+		.header__wrap.row
+			.header__logo.logo
+				.logo__img
+					img(src="_/uploads/logo.png", alt="")
+				.logo__text Сохраняем тепло
+			.header__main.row
+				.header__nav
+					ul
+						li
+							a(href="#") О теплоносителе
+						li
+							a(href="#") Наша продукция
+						li
+							a(href="#") Дилерам
+						li
+							a(href="#") Контакты
+				.header__contacts
+					.header__time Ежедневно с #[strong 10:00 до 20:00]
+					a.header__tel(href="") 8 (951) 900-70-00
+					a.header__callback(href="") Заказать звонок
+			.header__ham.ham

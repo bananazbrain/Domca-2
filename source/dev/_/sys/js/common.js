@@ -10,19 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //   autoFocus: false,
   // });
 
-  // CHECK INIT
-  let checks = document.querySelectorAll('.check');
-  if (checks) {
-    checks.forEach((check) => {
-      new Check(check);
-    });
-  }
-
-  // SELECT INIT
-  var selects = document.querySelectorAll('.select');
-  selects.forEach(select => {
-    new Select(select);
-  });
 
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
@@ -52,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // HEADER MENU NAV
   let menuHam = document.querySelector('.ham');
-  let menuNav = document.querySelector('.header');
+  let menuNav = document.querySelector('.header__main');
 
   if (menuHam) {
     for (let i = 0; i < 3; i++) {
