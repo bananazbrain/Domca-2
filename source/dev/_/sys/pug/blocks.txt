@@ -1,0 +1,8 @@
+//- header 
++style('header', 'blocks')
+include ../../blocks/header/header
+
+//- footer 
++style('footer', 'blocks')
+include ../../blocks/footer/footer
+

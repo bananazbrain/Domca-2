@@ -1,0 +1,88 @@
+*, :before, :after
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
+
+:focus
+	outline: none !important
+
+html, body
+	min-height: 100%
+	-webkit-text-size-adjust: 100%
+	-webkit-tap-highlight-color: transparent
+	scroll-behavior: smooth
+
+body
+	color: var(--black)
+	font-size: var(--fz-main)
+	font-family: var(--ff-main)
+	background: var(--white)
+	margin-left: auto
+	margin-right: auto
+	position: relative
+
+h1, h2, h3, h4, h5, h6
+	font: inherit
+	display: inline
+
+ol, ul
+	list-style: none
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+
+li
+	display: block
+	list-style-image: none
+
+table
+	border-spacing: 0
+	border-collapse: collapse
+
+a
+	color: var(--black)
+	font-size: var(--fz-main)
+	font-family: var(--ff-main)
+	transition: var(--transition)
+	text-decoration: none
+	outline: none
+
+input, textarea, button
+	outline: none
+	appearance: none
+	background: none
+	border-radius: 0px
+	-webkit-border-radius: 0px
+	-moz-border-radius: 0px
+
+input:-webkit-autofill
+	transition: all 5000s ease-in-out 0s
+
+var
+	font-style: normal
+
+strong
+	font-weight: 700
+
+i
+	font-style: normal
+
+u
+	text-decoration: none
+
+picture, img
+	display: block
+	max-width: 100%
+	max-height: 100%
+	user-select: none
+	-moz-user-select: none
+	-webkit-user-select: none
+	-webkit-touch-callout: none
+
+svg
+	display: block
+	transition: var(--transition)
+
+path, circle, rect, line
+	transition: var(--transition)

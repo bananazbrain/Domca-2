@@ -1,0 +1,28 @@
+{
+  "name": "west",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WAN-SA/WEST.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WAN-SA/WEST/issues"
+  },
+  "homepage": "https://github.com/WAN-SA/WEST#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "clean-html": "^1.5.0",
+    "i": "^0.3.6",
+    "npm": "^6.14.11",
+    "opn": "^6.0.0",
+    "pug": "^3.0.0",
+    "sass": "^1.32.2"
+  }
+}

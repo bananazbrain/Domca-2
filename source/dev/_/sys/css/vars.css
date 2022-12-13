@@ -1,0 +1,7 @@
+:root {
+  --ff-main: "Roboto", sans-serif;
+  --fz-main: 16px;
+  --black: #000;
+  --white: #FFF;
+  --transition: .3s ease-in-out;
+}
