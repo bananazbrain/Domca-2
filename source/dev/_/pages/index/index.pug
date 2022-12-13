@@ -206,4 +206,24 @@ block content
 						.type__name.h6 #[h6 Теплоносители в канистрах #[br](10 и 20 литров)]
 						.type__text Идеальный вариант, если вы планируете перепродавать теплоносители конечному потребителю. Например, этот вариант идеально подходит для строительных и сантехнических магазинов, строительных баз - когда нужно показать товар лицом.
 
+	+style('partners', 'blocks')
+	.partners
+		.case
+			.partners__title.h2.tac #[h2 Наши теплоносители используются #[br]на #[u крупнейших предприятиях страны]]
+			.partners__list
+				mixin partners(img)
+					.partners__item
+						img(src=img, alt="")
+				+partners('_/uploads/partners-1.png')
+				+partners('_/uploads/partners-2.png')
+				+partners('_/uploads/partners-3.png')
+				+partners('_/uploads/partners-4.png')
+				+partners('_/uploads/partners-5.png')
+				+partners('_/uploads/partners-6.png')
+				+partners('_/uploads/partners-7.png')
+				+partners('_/uploads/partners-8.png')
+				+partners('_/uploads/partners-9.png')
+				+partners('_/uploads/partners-10.png')
+				+partners('_/uploads/partners-11.png')
+				+partners('_/uploads/partners-12.png')
 

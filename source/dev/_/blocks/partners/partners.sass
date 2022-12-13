@@ -1,13 +1,27 @@
-@import ../../sys/sass/vars
+.partners
+	padding: 50px 0
+	&__title
+		margin-bottom: 50px
+	&__list
+		gap: 26px
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+	&__item
+		min-height: 116px
 
-// .partners
+		background: var(--gray)
+		border-radius: var(--border)
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			mix-blend-mode: multiply
 
 @media screen and (max-width: 1220px)
 	// .partners
-		
+
 @media screen and (max-width: 992px)
 	// .partners
-		
+
 @media screen and (max-width: 767px)
 	// .partners
-		
