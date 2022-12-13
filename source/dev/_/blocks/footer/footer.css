@@ -1,0 +1,91 @@
+.footer {
+  padding: 40px 0 24px;
+  color: var(--dark-gray);
+  background: #202020;
+}
+.footer__main {
+  padding-bottom: 24px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+}
+.footer__info {
+  max-width: 170px;
+}
+.footer__logo {
+  max-width: 152px;
+  margin-bottom: 38px;
+}
+.footer__req {
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer__req p {
+  margin-bottom: 4px;
+}
+.footer__req p:last-child {
+  margin-bottom: 0;
+}
+.footer__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -2px;
+  margin-bottom: 32px;
+  color: var(--white);
+}
+.footer__nav {
+  width: 100%;
+  max-width: 354px;
+}
+.footer__nav-list {
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav-list ul {
+  flex-direction: column;
+}
+.footer__nav-list ul li {
+  margin-bottom: 16px;
+}
+.footer__nav-list ul li a {
+  color: #B7B7B7;
+}
+.footer__nav-list ul li:hover a {
+  color: var(--red);
+}
+.footer__act {
+  width: 100%;
+  max-width: 235px;
+}
+.footer__text {
+  line-height: 25px;
+  margin-top: -10px;
+  margin-bottom: 26px;
+}
+.footer__btn {
+  font-size: 14px;
+  min-height: 66px;
+}
+.footer__btn.--red {
+  box-shadow: none;
+}
+.footer__btn.--red:hover {
+  background: #a90008;
+}
+.footer__panel {
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__panel-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  border-bottom: 1px solid transparent;
+}
+.footer__panel a {
+  border-color: var(--dark-gray);
+}
+.footer__panel a:hover {
+  border-color: transparent;
+}
