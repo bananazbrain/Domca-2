@@ -1,13 +1,34 @@
-@import ../../sys/sass/vars
-
-// .type
+.type
+	padding: 56px 0 50px
+	background: var(--gray)
+	&__title
+		margin-bottom: 55px
+	&__list
+		justify-content: space-between
+	&__item
+		padding: 32px
+		width: calc( 50% - 24px )
+		background: var(--white)
+		box-shadow: var(--shadow)
+		border-radius: var(--border)
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+	&__img
+		max-height: 367px
+		margin-bottom: 26px
+	&__name
+		line-height: 32px
+		margin-bottom: 16px
+	&__text
+		line-height: 25px
 
 @media screen and (max-width: 1220px)
 	// .type
-		
+
 @media screen and (max-width: 992px)
 	// .type
-		
+
 @media screen and (max-width: 767px)
 	// .type
-		
