@@ -29,3 +29,17 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (max-width: 991px) {
+  .partners {
+    padding: 40px 0 50px;
+  }
+  .partners__title {
+    margin-bottom: 30px;
+  }
+  .partners__list {
+    gap: 16px;
+  }
+  .partners__item {
+    padding: 5px 10px;
+  }
+}

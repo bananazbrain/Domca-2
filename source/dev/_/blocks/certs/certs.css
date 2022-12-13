@@ -65,3 +65,18 @@
     transform: none;
   }
 }
+@media screen and (max-width: 991px) {
+  .certs__slider {
+    overflow: visible;
+  }
+  .certs__slider-wrap {
+    height: 450px;
+  }
+  .certs__slider-slide.swiper-slide-active {
+    width: 320px;
+    height: 450px;
+  }
+  .certs__arrows {
+    max-width: 110px;
+  }
+}

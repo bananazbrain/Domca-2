@@ -3,7 +3,7 @@
 	&__title
 		margin-bottom: 80px
 	&__list
-		gap: 21px
+		gap: 40px 21px
 		display: grid
 		grid-template-columns: repeat(4, 1fr)
 	&__item
@@ -36,11 +36,11 @@
 
 @media screen and (max-width: 1280px)
 	.catalog
-		padding: 40px 0 60px
+		padding: 50px 0 60px
 		&__title
 			margin-bottom: 50px
 		&__list
-			gap: 16px
+			gap: 40px 16px
 		&__img
 			max-width: 190px
 			margin-bottom: 25px
@@ -49,8 +49,22 @@
 		&__btn
 			min-height: 66px
 
-@media screen and (max-width: 992px)
-	// .catalog
+@media screen and (max-width: 991px)
+	.catalog
+		&__title
+			margin-bottom: 40px
+		&__list
+			padding: 0 20px
+			grid-template-columns: repeat(2, 1fr)
+		&__img
+			margin-bottom: 20px
+		&__name
+			margin-bottom: 15px
+		&__text
+			margin-bottom: 20px
+			min-height: auto
+		&__temp
+			margin-bottom: 20px
 
 @media screen and (max-width: 767px)
 	// .catalog

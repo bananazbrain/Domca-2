@@ -242,6 +242,7 @@ path, circle, rect, line {
   z-index: 1;
   top: 50%;
   left: 28px;
+  max-width: 24px;
   transform: translateY(-50%);
   position: absolute;
 }
@@ -269,6 +270,15 @@ path, circle, rect, line {
   border-color: var(--red);
 }
 
+@media screen and (max-width: 991px) {
+  .field__icon {
+    left: 20px;
+    max-width: 20px;
+  }
+  .field__area {
+    padding: 26px 24px 26px 54px;
+  }
+}
 .h1 {
   font-size: 48px;
   line-height: 60px;
@@ -601,11 +611,6 @@ path, circle, rect, line {
   transform: scale(1);
 }
 
-.case {
-  border-right: 1px solid red;
-  border-left: 1px solid red;
-}
-
 @media screen and (max-width: 1280px) {
   .h1 {
     font-size: 45px;
@@ -627,5 +632,43 @@ path, circle, rect, line {
   }
   .list-line ul li:before {
     width: 25px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .side-panel {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .h4 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .h5 {
+    font-size: 22px;
+  }
+
+  .h6 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    width: 50px;
+    height: 50px;
+  }
+  .swiper-button-prev svg, .swiper-button-next svg {
+    width: 11px;
   }
 }

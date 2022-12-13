@@ -97,3 +97,24 @@
     max-width: 300px;
   }
 }
+@media screen and (max-width: 991px) {
+  .footer__info {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .footer__panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer__panel-item {
+    margin-bottom: 15px;
+  }
+  .footer__panel-item:last-child {
+    margin-bottom: 0;
+  }
+}

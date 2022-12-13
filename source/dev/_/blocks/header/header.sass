@@ -97,7 +97,82 @@
 			font-size: 20px
 
 @media screen and (max-width: 991px)
-	// .header
+	.header
+		padding: 15px 0
+		&__main
+			left: 50%
+			bottom: 0
+			opacity: 0
+			width: 100%
+			max-width: 730px
+			transform: translateX(-50%) translateY(100px)
+			height: calc( 100% - 85px )
+			background: var(--white)
+			transition: var(--transition)
+			flex-direction: column
+			align-items: flex-start
+			visibility: hidden
+			position: fixed
+			&:before
+				z-index: -1
+				left: 50%
+				width: 1000%
+				height: 100%
+				transform: translateX(-50%)
+				background: var(--white)
+				transition: var(--transition)
+				content: ""
+				position: absolute
+			&.--toggle
+				opacity: 1
+				transform: translateX(-50%) translateY(0)
+				visibility: visible
+		&__nav
+			width: 100%
+			padding: 32px 10px
+			border-top: 1px solid rgba(0, 0, 0, 0.1)
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+			ul
+				flex-direction: column
+				li
+					margin-right: 0
+					margin-bottom: 28px
+					a
+						font-size: 28px
+						font-family: var(--ff-title)
+					&:last-child
+						margin-bottom: 0
+					&:hover
+						transform: none
+		&__contacts
+			padding-top: 32px
+			padding-left: 40px
+			margin-left: 0
+			align-items: flex-start
+		&__tel
+			order: 1
+			font-size: 24px
+			margin: 0 0 12px
+			position: relative
+			&:before
+				left: -28px
+				top: 50%
+				width: 20px
+				height: 20px
+				transform: translateY(-50%)
+				background: url('../../uploads/icons/tel-red.svg') no-repeat
+				background-size: contain
+				position: absolute
+				content: ""
+		&__time
+			order: 2
+			padding-left: 12px
+			margin-bottom: 12px
+		&__callback
+			order: 3
+
+	.ham
+		display: flex
 
 @media screen and (max-width: 767px)
 	// .header

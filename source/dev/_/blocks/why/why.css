@@ -50,3 +50,28 @@
     margin-top: -30px;
   }
 }
+@media screen and (max-width: 991px) {
+  .why__wrap {
+    flex-direction: column;
+  }
+  .why__info {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .why__title {
+    margin-bottom: 20px;
+  }
+  .why__text {
+    font-size: 22px;
+    line-height: 32px;
+    padding-right: 45px;
+  }
+  .why__img {
+    max-width: 400px;
+    margin-top: 0;
+    margin-right: auto;
+  }
+  .why__bg {
+    left: -1000px;
+  }
+}

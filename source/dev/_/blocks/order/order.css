@@ -25,6 +25,7 @@
 }
 .order__policy {
   font-size: 14px;
+  line-height: 18px;
   margin-top: 24px;
   color: var(--dark-gray);
   text-align: center;
@@ -82,5 +83,29 @@
   }
   .order__call-title {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .order {
+    padding: 40px 0 50px;
+  }
+  .order__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .order__form {
+    padding: 32px;
+  }
+  .order__fields {
+    gap: 16px;
+  }
+  .order__btn {
+    min-height: 74px;
+  }
+  .order__call-img {
+    max-width: 30px;
+  }
+  .order__call-text {
+    font-size: 28px;
   }
 }

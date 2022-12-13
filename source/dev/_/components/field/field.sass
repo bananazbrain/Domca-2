@@ -9,6 +9,7 @@
     z-index: 1
     top: 50%
     left: 28px
+    max-width: 24px
     transform: translateY(-50%)
     position: absolute
   &__area
@@ -33,3 +34,11 @@
     .field
       &__area
         border-color: var(--red)
+
+@media screen and (max-width: 991px)
+  .field
+    &__icon
+      left: 20px
+      max-width: 20px
+    &__area
+      padding: 26px 24px 26px 54px

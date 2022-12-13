@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 1280px) {
   .quality {
-    padding: 40px 0 60px;
+    padding: 50px 0 60px;
   }
   .quality__title {
     margin-bottom: 50px;
@@ -91,5 +91,25 @@
   }
   .quality__decor {
     max-width: 350px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .quality__title {
+    margin-bottom: 30px;
+  }
+  .quality__wrap {
+    flex-direction: column;
+  }
+  .quality__info {
+    order: 1;
+    max-width: 100%;
+  }
+  .quality__img {
+    order: 2;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+  .quality__decor {
+    max-width: 320px;
   }
 }

@@ -45,3 +45,24 @@
     display: none;
   }
 }
+@media screen and (max-width: 991px) {
+  .type {
+    padding: 40px 0 50px;
+  }
+  .type__title {
+    margin-bottom: 30px;
+  }
+  .type__item {
+    padding: 26px 16px;
+  }
+  .type__img {
+    height: 210px;
+  }
+  .type__name {
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .type__text {
+    line-height: 24px;
+  }
+}

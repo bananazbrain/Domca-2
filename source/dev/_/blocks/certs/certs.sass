@@ -54,8 +54,18 @@
 			position: relative
 			transform: none
 
-@media screen and (max-width: 992px)
-	// .certs
+@media screen and (max-width: 991px)
+	.certs
+		&__slider
+			overflow: visible
+			&-wrap
+				height: 450px
+			&-slide
+				&.swiper-slide-active
+					width: 320px
+					height: 450px
+		&__arrows
+			max-width: 110px
 
 @media screen and (max-width: 767px)
 	// .certs

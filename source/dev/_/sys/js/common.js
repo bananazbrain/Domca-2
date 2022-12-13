@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
         clickable: true,
       },
       breakpoints: {
+        768: {
+          spaceBetween: 20,
+          slidesOffsetBefore: -35,
+        },
         992: {
           spaceBetween: 60,
           slidesOffsetBefore: -50,

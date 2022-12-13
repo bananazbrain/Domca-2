@@ -42,3 +42,17 @@
     height: 120px;
   }
 }
+@media screen and (max-width: 991px) {
+  .pros__subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .pros__list {
+    padding: 0 30px;
+    gap: 30px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pros__name {
+    margin-bottom: 12px;
+  }
+}

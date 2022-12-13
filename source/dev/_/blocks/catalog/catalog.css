@@ -5,7 +5,7 @@
   margin-bottom: 80px;
 }
 .catalog__list {
-  gap: 21px;
+  gap: 40px 21px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -47,13 +47,13 @@
 
 @media screen and (max-width: 1280px) {
   .catalog {
-    padding: 40px 0 60px;
+    padding: 50px 0 60px;
   }
   .catalog__title {
     margin-bottom: 50px;
   }
   .catalog__list {
-    gap: 16px;
+    gap: 40px 16px;
   }
   .catalog__img {
     max-width: 190px;
@@ -64,5 +64,27 @@
   }
   .catalog__btn {
     min-height: 66px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .catalog__title {
+    margin-bottom: 40px;
+  }
+  .catalog__list {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog__img {
+    margin-bottom: 20px;
+  }
+  .catalog__name {
+    margin-bottom: 15px;
+  }
+  .catalog__text {
+    margin-bottom: 20px;
+    min-height: auto;
+  }
+  .catalog__temp {
+    margin-bottom: 20px;
   }
 }
