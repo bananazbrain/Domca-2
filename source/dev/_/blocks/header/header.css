@@ -1,5 +1,9 @@
 .header {
+  z-index: 10;
   padding: 25px 0;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: relative;
 }
 .header__wrap {
   align-items: center;

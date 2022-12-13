@@ -5,8 +5,10 @@
   position: relative;
 }
 .intro__info {
+  z-index: 1;
   width: 100%;
   max-width: 750px;
+  position: relative;
 }
 .intro__title {
   margin-bottom: 35px;

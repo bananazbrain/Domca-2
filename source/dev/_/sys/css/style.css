@@ -570,3 +570,33 @@ path, circle, rect, line {
   transition: 1.5s;
   transition-property: opacity;
 }
+.fadeIn-up {
+  opacity: 0;
+  transform: translateY(150px);
+}
+.fadeIn-up.--loaded {
+  opacity: 1;
+  transition: 1s;
+  transition-property: opacity, transform;
+  transform: translateY(0);
+}
+.fadeIn-down {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.fadeIn-down.--loaded {
+  opacity: 1;
+  transition: 1s;
+  transition-property: transform;
+  transform: none;
+}
+.fadeIn-scale {
+  opacity: 0;
+  transform: scale(0.5);
+}
+.fadeIn-scale.--loaded {
+  opacity: 1;
+  transition: 1.2s;
+  transition-property: opacity, transform;
+  transform: scale(1);
+}
