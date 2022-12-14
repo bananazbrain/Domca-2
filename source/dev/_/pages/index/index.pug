@@ -9,15 +9,15 @@ block content
 		.side-panel__wrap
 			.side-panel__close
 			.side-panel__list
-				a.side-panel__item(href="" download)
+				a.side-panel__item(data-fancybox data-src="#modal-price" href="javascript:;")
 					.side-panel__icon
 						img(src="_/uploads/icons/price.svg", alt="")
 					.side-panel__text Получить Прайс
-				a.side-panel__item(href="")
+				a.side-panel__item(data-fancybox data-src="#modal-callback" href="javascript:;")
 					.side-panel__icon
 						img(src="_/uploads/icons/tel.svg", alt="")
 					.side-panel__text Перезвоните мне
-				a.side-panel__item(href="#order")
+				a.side-panel__item(data-fancybox data-src="#modal-dealer" href="javascript:;")
 					.side-panel__icon
 						img(src="_/uploads/icons/dealer.svg", alt="")
 					.side-panel__text Стать Дилером
@@ -39,7 +39,7 @@ block content
 							li Маркетинговая поддержка
 							li Высокая маржинальность
 					.intro__price.an.fadeIn-up(data-timeout="0.15s")
-						.intro__btn.btn.--red ПОЛУЧИТЬ ПРАЙС + КОММЕРЧЕСКОЕ
+						a.intro__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") ПОЛУЧИТЬ ПРАЙС + КОММЕРЧЕСКОЕ
 						.intro__desc
 							.intro__desc-img
 								img(src="_/uploads/calc.png" srcset="_/uploads/calc-x2.png 2x", alt="")
@@ -88,7 +88,7 @@ block content
 							.catalog__name Теплоноситель «DOMCA» -65⁰ #[i (основа МЭГ)]
 							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -65°C до +108°C]
-						a.catalog__btn.btn.--b-red(href="") Подробнее
+						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-meg65" href="javascript:;") Подробнее
 					.catalog__item
 						.catalog__img
 							img(src="_/uploads/catalog-2.png", alt="" width="223" height="296")
@@ -96,7 +96,7 @@ block content
 							.catalog__name Теплоноситель «DOMCA» -30⁰ #[i (основа МЭГ)]
 							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -30°C до +108°C]
-						a.catalog__btn.btn.--b-red(href="") Подробнее
+						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-meg30" href="javascript:;") Подробнее
 					.catalog__item
 						.catalog__img
 							img(src="_/uploads/catalog-3.png", alt="" width="223" height="296")
@@ -104,7 +104,7 @@ block content
 							.catalog__name Теплоноситель «DOMCA» -65⁰ #[i (основа пропиленгликоль)]
 							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -65°C до +108°C]
-						a.catalog__btn.btn.--b-red(href="") Подробнее
+						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-prop65" href="javascript:;") Подробнее
 					.catalog__item
 						.catalog__img
 							img(src="_/uploads/catalog-4.png", alt="" width="223" height="296")
@@ -112,7 +112,7 @@ block content
 							.catalog__name Теплоноситель «DOMCA» -30⁰ #[i (основа пропиленгликоль)]
 							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -30°C до +108°C]
-						a.catalog__btn.btn.--b-red(href="") Подробнее
+						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-prop30" href="javascript:;") Подробнее
 		.anchore__link#catalog
 
 	+style('dealer', 'blocks')
@@ -133,7 +133,7 @@ block content
 							li Отсутствие жёстких требований по объему продаж
 							li Маркетинговая поддержка
 					.dealer__btn-wrap.an.fadeIn-up(data-timeout="0.2s") 
-						a.dealer__btn.btn.--red(href="") Получить подробные условия
+						a.dealer__btn.btn.--red(data-fancybox data-src="#modal-dealer" href="javascript:;") Получить подробные условия
 		.dealer__bg.bg-img
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="760")
 		.dealer__bottom

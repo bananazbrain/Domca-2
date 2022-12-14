@@ -32,9 +32,202 @@ footer.footer
 			.footer__act
 				.footer__title Остались вопросы?
 				.footer__text Оставьте заявку и мы свяжемся #[br]с вами для конусльтации
-				.footer__btn.btn.--red Перезвоните мне
+				a.footer__btn.btn.--red(data-fancybox data-src="#modal-callback" href="javascript:;") Перезвоните мне
 		.footer__panel.row
 			.footer__panel-item @2022 Все права защищены
 			a.footer__panel-item(href="" target="_blank") Политика конфиденциальности
 			a.footer__panel-item(href="" target="_blank") Согласие на обработку персональных данных
 		
+.modal.--static#modal-callback
+	.modal__wrap
+		.modal__info.tac
+			.modal__title Обратный звонок
+			.modal__subtitle Заполните форму и мы перезвоним вам #[br]в течение 15 минут
+		form.modal__form
+			.modal__fields
+				.modal__field.field.--required.--name
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/person-gray.svg", alt="")
+						input.field__area(type="text" name="name" placeholder="Введите ваше имя")
+				.modal__field.field.--required.--tel
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/tel-gray.svg", alt="")
+						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
+				button.modal__btn.btn.--red Перезвоните мне
+			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="" target="_blank") условиями обработки данных] и #[a(href="" target="_blank") политикой конфиденциальности]
+
+.modal.--static#modal-price
+	.modal__wrap
+		.modal__info.tac
+			.modal__title Получить прайс
+			.modal__subtitle Заполните форму и мы перезвоним вам #[br]в течение 15 минут
+		form.modal__form
+			.modal__fields
+				.modal__field.field.--required.--name
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/person-gray.svg", alt="")
+						input.field__area(type="text" name="name" placeholder="Введите ваше имя")
+				.modal__field.field.--required.--tel
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/tel-gray.svg", alt="")
+						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
+				button.modal__btn.btn.--red Получить прайс
+			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="" target="_blank") условиями обработки данных] и #[a(href="" target="_blank") политикой конфиденциальности]
+
+.modal.--static#modal-dealer
+	.modal__wrap
+		.modal__info.tac
+			.modal__title Стать дилером
+			.modal__subtitle Заполните форму и мы перезвоним вам #[br]в течение 15 минут
+		form.modal__form
+			.modal__fields
+				.modal__field.field.--required.--name
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/person-gray.svg", alt="")
+						input.field__area(type="text" name="name" placeholder="Введите ваше имя")
+				.modal__field.field.--required.--tel
+					.field__wrap
+						.field__icon
+							img(src="_/uploads/icons/tel-gray.svg", alt="")
+						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
+				button.modal__btn.btn.--red Хочу стать дилером
+			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="" target="_blank") условиями обработки данных] и #[a(href="" target="_blank") политикой конфиденциальности]
+
+.modal.--catalog#modal-meg65
+	.modal__wrap.row
+		.modal__preview
+			.modal__img
+				img(src="_/uploads/catalog-1.png", alt="")
+			.modal__stat
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-1.svg", alt="")
+					.modal__stat-text
+						p Срок службы
+						strong до 10 лет
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-2.svg", alt="")
+					.modal__stat-text
+						strong Фасовка:
+						p канистра #[strong – 10л]
+						p канистра #[strong – 20л]
+						p бочка #[strong – 50л]
+						p бочка #[strong – 210л]
+		.modal__inner
+			.modal__title-md Теплоноситель «DOMCA» -65⁰ #[br](основа МЭГ)
+			.modal__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением комплекса присадок.
+			.modal__title-sm Состав
+			.modal__text Этиленгликоль высшего сорта, дистиллированная вода, пакет антикоррозийных и стабилизирующих присадок, флуоресцентный краситель, обеспечивающий быстрое обнаружение утечек. Не содержит аминов, нитрозоаминов, фосфатов и силикатов.
+			.modal__note
+				.modal__note-icon
+					img(src="_/uploads/icons/stat-3.svg", alt="")
+				.modal__note-text Диапазон температур эксплуатации #[strong от -65°C до +108°C]
+			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+
+.modal.--catalog#modal-meg30
+	.modal__wrap.row
+		.modal__preview
+			.modal__img
+				img(src="_/uploads/catalog-2.png", alt="")
+			.modal__stat
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-1.svg", alt="")
+					.modal__stat-text
+						p Срок службы
+						strong до 10 лет
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-2.svg", alt="")
+					.modal__stat-text
+						strong Фасовка:
+						p канистра #[strong – 10л]
+						p канистра #[strong – 20л]
+						p бочка #[strong – 50л]
+						p бочка #[strong – 210л]
+		.modal__inner
+			.modal__title-md Теплоноситель «DOMCA» -30⁰ #[br](основа МЭГ)
+			.modal__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
+			.modal__title-sm Состав
+			.modal__text Этиленгликоль высшего сорта, дистиллированная вода, пакет антикоррозийных и стабилизирующих присадок, флуоресцентный краситель, обеспечивающий быстрое обнаружение утечек. Не содержит аминов, нитрозоаминов, фосфатов и силикатов.
+			.modal__note
+				.modal__note-icon
+					img(src="_/uploads/icons/stat-3.svg", alt="")
+				.modal__note-text Диапазон температур эксплуатации #[strong от -30°C до +108°C]
+			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+
+.modal.--catalog#modal-prop65
+	.modal__wrap.row
+		.modal__preview
+			.modal__img
+				img(src="_/uploads/catalog-3.png", alt="")
+			.modal__stat
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-1.svg", alt="")
+					.modal__stat-text
+						p Срок службы
+						strong до 10 лет
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-2.svg", alt="")
+					.modal__stat-text
+						strong Фасовка:
+						p канистра #[strong – 10л]
+						p канистра #[strong – 20л]
+						p бочка #[strong – 50л]
+						p бочка #[strong – 210л]
+		.modal__inner
+			.modal__title-md Теплоноситель «DOMCA» -65⁰ #[br](основа пропиленгликоль)
+			.modal__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
+			.modal__title-sm Состав
+			.modal__text Этиленгликоль высшего сорта, дистиллированная вода, пакет антикоррозийных и стабилизирующих присадок, флуоресцентный краситель, обеспечивающий быстрое обнаружение утечек. Не содержит аминов, нитрозоаминов, фосфатов и силикатов.
+			.modal__note
+				.modal__note-icon
+					img(src="_/uploads/icons/stat-3.svg", alt="")
+				.modal__note-text Диапазон температур эксплуатации #[strong от -65°C до +108°C]
+			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+
+.modal.--catalog#modal-prop30
+	.modal__wrap.row
+		.modal__preview
+			.modal__img
+				img(src="_/uploads/catalog-4.png", alt="")
+			.modal__stat
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-1.svg", alt="")
+					.modal__stat-text
+						p Срок службы
+						strong до 10 лет
+				.modal__stat-item
+					.modal__stat-icon
+						img(src="_/uploads/icons/stat-2.svg", alt="")
+					.modal__stat-text
+						strong Фасовка:
+						p канистра #[strong – 10л]
+						p канистра #[strong – 20л]
+						p бочка #[strong – 50л]
+						p бочка #[strong – 210л]
+		.modal__inner
+			.modal__title-md Теплоноситель «DOMCA» -30⁰ #[br](основа пропиленгликоль)
+			.modal__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
+			.modal__title-sm Состав
+			.modal__text Этиленгликоль высшего сорта, дистиллированная вода, пакет антикоррозийных и стабилизирующих присадок, флуоресцентный краситель, обеспечивающий быстрое обнаружение утечек. Не содержит аминов, нитрозоаминов, фосфатов и силикатов.
+			.modal__note
+				.modal__note-icon
+					img(src="_/uploads/icons/stat-3.svg", alt="")
+				.modal__note-text Диапазон температур эксплуатации #[strong от -30°C до +108°C]
+			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+
+.modal.--thanks#modal-thanks
+	.modal__wrap
+		.modal__info.tac
+			.modal__title Ваша заявка #[i]принята
+			.modal__subtitle C вами свяжутся в ближайшее время
