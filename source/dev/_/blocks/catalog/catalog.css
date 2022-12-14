@@ -99,3 +99,34 @@
     max-width: 150px;
   }
 }
+@media screen and (max-width: 580px) {
+  .catalog {
+    padding: 32px 0 48px;
+  }
+  .catalog__title {
+    margin-bottom: 30px;
+  }
+  .catalog__list {
+    gap: 72px 16px;
+    grid-template-columns: auto;
+  }
+  .catalog__img {
+    max-width: 220px;
+    margin-bottom: 32px;
+  }
+  .catalog__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .catalog__text {
+    margin-bottom: 28px;
+  }
+  .catalog__temp {
+    margin-bottom: 32px;
+  }
+  .catalog__btn {
+    font-size: 16px;
+    max-width: 100%;
+    min-height: 88px;
+  }
+}

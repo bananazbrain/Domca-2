@@ -130,3 +130,35 @@
     max-width: 280px;
   }
 }
+@media screen and (max-width: 580px) {
+  .quality {
+    padding: 32px 0 40px;
+  }
+  .quality__title u {
+    display: block;
+  }
+  .quality__info {
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .quality__list {
+    max-width: 313px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quality__name {
+    margin-bottom: 16px;
+  }
+  .quality__text p {
+    margin-bottom: 24px;
+  }
+  .quality__text i {
+    display: block;
+  }
+  .quality__img {
+    max-width: 375px;
+  }
+  .quality__decor {
+    max-width: 190px;
+  }
+}

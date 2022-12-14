@@ -88,7 +88,6 @@
 	.order
 		&__subtitle
 			font-size: 18px
-			line-height: 26px
 		&__form
 			padding: 26px
 		&__fields
@@ -101,3 +100,31 @@
 		&__call
 			&-text
 				font-size: 26px
+
+@media screen and (max-width: 580px)
+	.order
+		padding: 32px 0
+		&__title
+			margin-bottom: 16px
+		&__subtitle
+			max-width: 300px
+			margin-left: auto
+			margin-right: auto
+			br
+				display: none
+		&__form
+			padding: 16px
+		&__btn
+			font-size: 14px
+			min-height: 91px
+		&__policy
+			font-size: 12px
+			margin-top: 22px
+			a
+				font-size: 12px
+		&__call
+			padding-top: 30px
+			&-img
+				max-width: 34px
+			&-text
+				font-size: 24px

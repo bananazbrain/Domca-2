@@ -51,3 +51,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 580px) {
+  .partners {
+    padding: 32px 0;
+  }
+  .partners__list {
+    gap: 13px;
+  }
+  .partners__item {
+    padding: 10px;
+    min-height: 86px;
+    height: 86px;
+  }
+}

@@ -132,10 +132,10 @@
 		&__title
 			margin-bottom: 20px
 		&__list
-			margin-bottom: 30px
+			margin-bottom: 38px
 			ul
 				li
-					margin-bottom: 14px
+					margin-bottom: 12px
 		&__price
 			flex-direction: column
 			align-items: flex-start
@@ -165,3 +165,43 @@
 					display: none
 		&__img
 			max-width: 350px
+
+@media screen and (max-width: 580px)
+	.intro
+		padding: 20px 0 32px
+		&__title
+			margin-bottom: 16px
+		&__list
+			max-width: 250px
+			ul
+				li
+					font-size: 16px
+					line-height: 24px
+					padding-left: 22px
+		&__btn
+			font-size: 12px
+			letter-spacing: .9px
+			padding: 10px 16px
+		&__desc
+			&-img
+				top: 5px
+				right: 5px
+				max-width: 88px
+			&-text
+				font-size: 13px
+				max-width: 320px
+		&__img
+			max-width: 315px
+			margin: 30px auto 0
+		&__bottom
+			height: 210px
+			picture, img
+				object-fit: cover
+
+@media screen and (max-width: 395px)
+	.intro
+		&__btn
+			font-size: 11px
+		&__desc
+			&-img
+				right: -5px

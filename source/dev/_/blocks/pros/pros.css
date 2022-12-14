@@ -74,3 +74,33 @@
     line-height: 24px;
   }
 }
+@media screen and (max-width: 580px) {
+  .pros {
+    padding: 32px 0;
+  }
+  .pros__title {
+    margin-bottom: 30px;
+  }
+  .pros__subtitle {
+    display: none;
+  }
+  .pros__list {
+    grid-template-columns: auto;
+  }
+  .pros__item.--sm .pros__img {
+    height: 135px;
+  }
+  .pros__item.--br-mob .pros__text br {
+    display: none;
+  }
+  .pros__img {
+    height: 150px;
+    margin-bottom: 22px;
+  }
+  .pros__name {
+    font-size: 20px;
+  }
+  .pros__text {
+    font-size: 16px;
+  }
+}

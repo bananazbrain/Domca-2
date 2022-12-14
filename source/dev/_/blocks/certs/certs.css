@@ -109,3 +109,24 @@
     position: absolute;
   }
 }
+@media screen and (max-width: 580px) {
+  .certs {
+    padding: 32px 0 30px;
+  }
+  .certs__slider {
+    max-width: 226px;
+  }
+  .certs__slider-slide {
+    height: 323px;
+    border-radius: var(--border-sm);
+  }
+  .certs__slider-slide.swiper-slide-active {
+    height: 323px;
+  }
+  .certs__arrows {
+    max-width: 350px;
+  }
+  .certs__pagination {
+    margin-top: 24px;
+  }
+}

@@ -88,3 +88,27 @@
     max-width: 340px;
   }
 }
+@media screen and (max-width: 580px) {
+  .why {
+    padding: 32px 0 0;
+  }
+  .why__title {
+    max-width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .why__text p {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .why__title {
+    width: calc( 100% + 15px );
+    margin-left: -5px;
+  }
+}

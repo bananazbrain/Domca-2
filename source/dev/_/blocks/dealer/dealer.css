@@ -114,3 +114,27 @@
     max-width: 360px;
   }
 }
+@media screen and (max-width: 580px) {
+  .dealer {
+    padding: 32px 0;
+  }
+  .dealer__subtitle {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .dealer__list {
+    max-width: 360px;
+  }
+  .dealer__list ul li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .dealer__btn {
+    font-size: 13px;
+    min-height: 96px;
+  }
+  .dealer__img {
+    max-width: 276px;
+  }
+}

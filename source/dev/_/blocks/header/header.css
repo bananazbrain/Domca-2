@@ -155,7 +155,7 @@
   }
   .header__nav {
     width: 100%;
-    padding: 32px 10px;
+    padding: 35px 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -164,7 +164,7 @@
   }
   .header__nav ul li {
     margin-right: 0;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
   }
   .header__nav ul li a {
     font-size: 28px;
@@ -201,11 +201,13 @@
   }
   .header__time {
     order: 2;
+    font-size: 14px;
     padding-left: 12px;
     margin-bottom: 12px;
   }
   .header__callback {
     order: 3;
+    font-size: 16px;
   }
 
   .ham {
@@ -219,5 +221,19 @@
   .header__main {
     max-width: 560px;
     height: calc( 100% - 79px );
+  }
+}
+@media screen and (max-width: 580px) {
+  .header__logo {
+    max-width: 112px;
+  }
+  .header__main {
+    height: calc( 100% - 71px );
+  }
+  .header__nav {
+    padding: 35px 16px;
+  }
+  .header__contacts {
+    padding-left: 48px;
   }
 }

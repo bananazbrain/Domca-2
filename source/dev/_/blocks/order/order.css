@@ -112,7 +112,6 @@
 @media screen and (max-width: 767px) {
   .order__subtitle {
     font-size: 18px;
-    line-height: 26px;
   }
   .order__form {
     padding: 26px;
@@ -128,5 +127,44 @@
   }
   .order__call-text {
     font-size: 26px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .order {
+    padding: 32px 0;
+  }
+  .order__title {
+    margin-bottom: 16px;
+  }
+  .order__subtitle {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order__subtitle br {
+    display: none;
+  }
+  .order__form {
+    padding: 16px;
+  }
+  .order__btn {
+    font-size: 14px;
+    min-height: 91px;
+  }
+  .order__policy {
+    font-size: 12px;
+    margin-top: 22px;
+  }
+  .order__policy a {
+    font-size: 12px;
+  }
+  .order__call {
+    padding-top: 30px;
+  }
+  .order__call-img {
+    max-width: 34px;
+  }
+  .order__call-text {
+    font-size: 24px;
   }
 }

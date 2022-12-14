@@ -80,7 +80,7 @@
 		&__info
 			width: 100%
 			max-width: 100%
-			margin-bottom: 32px
+			margin-bottom: 30px
 		&__title
 			font-size: 22px
 			margin-bottom: 20px
@@ -101,23 +101,29 @@
 		&__info
 			text-align: center
 		&__logo
-			margin-bottom: 32px
+			margin-bottom: 36px
 			max-width: 152px
 			margin-left: auto
 			margin-right: auto
 			.logo
 				&__text
 					font-size: 15px
-					margin-top: 6px
+					margin-top: 11px
 		&__title
 			font-size: 24px
+			margin-bottom: 15px
 		&__nav
 			max-width: 100%
-			margin-bottom: 32px
+			margin-bottom: 30px
 			text-align: center
 		&__nav-list
 			gap: 0
 			flex-direction: column
+			ul
+				&:last-child
+					li
+						&:last-child
+							margin-bottom: 0
 		&__act
 			max-width: 100%
 			text-align: center
@@ -128,3 +134,7 @@
 			margin: 0 auto
 		&__panel
 			align-items: center
+
+@media screen and (max-width: 580px)
+	.footer
+		padding: 30px 0
