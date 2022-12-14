@@ -43,3 +43,11 @@
     padding: 5px 10px;
   }
 }
+@media screen and (max-width: 767px) {
+  .partners__title br {
+    display: none;
+  }
+  .partners__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

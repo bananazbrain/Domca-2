@@ -52,7 +52,7 @@ block content
 			img(src="_/uploads/intro-bottom.jpg" alt="" width="1920" height="138")
 
 	+style('quality', 'blocks')
-	.quality
+	.quality.anchore
 		.case
 			.quality__title.h2.tac.an.fadeIn-up #[h2 Качество #[u в каждой канистре]]
 			.quality__wrap.row
@@ -73,9 +73,10 @@ block content
 								p.light В отличие от обычной воды, от которой трубы, батареи #[br]и элементы котла могут просто лопнуть, если температура опустится ниже 0°С.
 		.quality__decor.an.fadeIn(data-timeout="0.1s")
 			img(src="_/uploads/quality-decor.png", alt="" width="492" height="637")
+		.anchore__link#quality
 
 	+style('catalog', 'blocks')
-	.catalog
+	.catalog.anchore
 		.case
 			.catalog__title.h2.tac.an.fadeIn-up #[h2 Наша продукция]
 			.catalog__wrap.an.fadeIn-up(data-timeout="0.1s")
@@ -112,9 +113,10 @@ block content
 							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -30°C до +108°C]
 						a.catalog__btn.btn.--b-red(href="") Подробнее
+		.anchore__link#catalog
 
 	+style('dealer', 'blocks')
-	.dealer.bg
+	.dealer.bg.anchore
 		.case
 			.dealer__wrap.row
 				.dealer__img.an.fadeIn-scale
@@ -136,6 +138,7 @@ block content
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="760")
 		.dealer__bottom
 			img(src="_/uploads/dealer-bottom.png", alt="" width="1920" height="358")
+		.anchore__link#dealer
 
 	+style('pros', 'blocks')
 	.pros
@@ -255,7 +258,7 @@ block content
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="828")
 
 	+style('order', 'blocks')
-	.order
+	.order.anchore
 		.case
 			.order__title.h2.tac.an.fadeIn-up #[h2 Хотите стать дилером?]
 			.order__subtitle.tac.an.fadeIn-up(data-timeout="0.1s") Оставьте заявку в форме ниже и мы свяжемся с вами #[br]в течение 15 минут, чтобы обсудить все детали
@@ -276,8 +279,8 @@ block content
 				.order__policy Нажимая на кнопку вы соглашаетесь с #[a(href="" target="_blank") условиями обработки данных] и #[a(href="" target="_blank") политикой конфиденциальности]
 			.order__call.an.fadeIn-up
 				.order__call-title.h4.tac #[h4 Или позвоните нам по телефону]
-				a.order__call-wrap.row(href="tel:+7")
+				a.order__call-wrap.row(href="tel:+79519007000")
 					.order__call-img
 						img(src="_/uploads/tel.png", alt="")
 					.order__call-text 8 (951) 900-70-00
-
+		.anchore__link#order

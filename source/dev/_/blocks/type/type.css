@@ -66,3 +66,28 @@
     line-height: 24px;
   }
 }
+@media screen and (max-width: 767px) {
+  .type__title {
+    margin-bottom: 20px;
+  }
+  .type__title u {
+    display: block;
+  }
+  .type__item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .type__item:last-child {
+    margin-bottom: 0;
+  }
+  .type__img {
+    height: 280px;
+  }
+  .type__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -212,3 +212,12 @@
     display: flex;
   }
 }
+@media screen and (max-width: 767px) {
+  .header__logo {
+    max-width: 134px;
+  }
+  .header__main {
+    max-width: 560px;
+    height: calc( 100% - 79px );
+  }
+}

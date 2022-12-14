@@ -109,3 +109,24 @@
     font-size: 28px;
   }
 }
+@media screen and (max-width: 767px) {
+  .order__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .order__form {
+    padding: 26px;
+  }
+  .order__fields {
+    grid-template-columns: auto;
+  }
+  .order__field:last-child {
+    grid-column: auto;
+  }
+  .order__policy {
+    margin-top: 18px;
+  }
+  .order__call-text {
+    font-size: 26px;
+  }
+}

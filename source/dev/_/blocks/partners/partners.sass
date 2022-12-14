@@ -8,7 +8,6 @@
 		grid-template-columns: repeat(4, 1fr)
 	&__item
 		min-height: 116px
-
 		background: var(--gray)
 		border-radius: var(--border)
 		display: flex
@@ -35,4 +34,9 @@
 			padding: 5px 10px
 
 @media screen and (max-width: 767px)
-	// .partners
+	.partners
+		&__title
+			br
+				display: none
+		&__list
+			grid-template-columns: repeat(2, 1fr)

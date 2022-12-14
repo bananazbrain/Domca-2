@@ -113,3 +113,20 @@
     max-width: 320px;
   }
 }
+@media screen and (max-width: 767px) {
+  .quality {
+    padding: 40px 0 50px;
+  }
+  .quality__title {
+    margin-bottom: 20px;
+  }
+  .quality__text {
+    font-size: 16px;
+  }
+  .quality__img {
+    max-width: 480px;
+  }
+  .quality__decor {
+    max-width: 280px;
+  }
+}

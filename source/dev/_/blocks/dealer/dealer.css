@@ -97,3 +97,20 @@
     margin: 30px auto 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .dealer {
+    padding: 40px 0;
+  }
+  .dealer__title {
+    margin-bottom: 20px;
+  }
+  .dealer__list ul li {
+    margin-bottom: 20px;
+  }
+  .dealer__btn {
+    margin-top: 30px;
+  }
+  .dealer__img {
+    max-width: 360px;
+  }
+}

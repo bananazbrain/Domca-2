@@ -65,17 +65,39 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  // ANCHORE
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+  for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const id = smoothLink.getAttribute('href');
+
+      menuHam.classList.remove('--toggle');
+      menuNav.classList.remove('--toggle');
+      html.classList.remove('overflow-disable');
+      body.classList.remove('overflow-disable');
+      inner.classList.remove('overflow-disable');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  }
+
   // CERTS SLIDER
   let certsSlider = document.querySelector('.certs__slider');
 
   if (certsSlider) {
     let certsSliderSwiper = new Swiper(certsSlider, {
-      slidesPerView: 'auto',
-      spaceBetween: 100,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      slidesOffsetBefore: 0,
       centeredSlides: true,
       centeredSlidesBounds: true,
       loop: true,
-      slidesOffsetBefore: -65,
       speed: 1000,
       navigation: {
         prevEl: '.certs__arrow.swiper-button-prev',
@@ -87,8 +109,10 @@ document.addEventListener('DOMContentLoaded', function () {
         clickable: true,
       },
       breakpoints: {
+        0: {
+        },
         768: {
-          spaceBetween: 20,
+          slidesPerView: 'auto',
           slidesOffsetBefore: -35,
         },
         992: {

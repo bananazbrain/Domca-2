@@ -229,6 +229,11 @@ path, circle, rect, line {
   background: var(--red);
 }
 
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 15px;
+  }
+}
 .field {
   width: 100%;
   display: block;
@@ -428,13 +433,12 @@ path, circle, rect, line {
 }
 .side-panel__list {
   border-radius: var(--border) 0 0 var(--border);
-  background: var(--red);
   overflow: hidden;
 }
 .side-panel__item {
   width: 100%;
   padding: 20px 13px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid #D04248;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,6 +505,14 @@ path, circle, rect, line {
   background-size: contain;
   position: absolute;
   content: "";
+}
+
+.anchore {
+  position: relative;
+}
+.anchore__link {
+  top: 0;
+  position: absolute;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -670,5 +682,37 @@ path, circle, rect, line {
   }
   .swiper-button-prev svg, .swiper-button-next svg {
     width: 11px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  .h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .h5 {
+    font-size: 20px;
+  }
+
+  .logo__text {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .list-line ul li {
+    padding-left: 28px;
+  }
+  .list-line ul li:before {
+    width: 18px;
   }
 }

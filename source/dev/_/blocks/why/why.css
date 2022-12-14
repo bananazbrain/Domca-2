@@ -75,3 +75,16 @@
     left: -1000px;
   }
 }
+@media screen and (max-width: 767px) {
+  .why {
+    padding: 40px 0 0;
+  }
+  .why__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 0;
+  }
+  .why__img {
+    max-width: 340px;
+  }
+}

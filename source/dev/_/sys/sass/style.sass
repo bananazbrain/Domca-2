@@ -133,12 +133,11 @@
 			background: darken(#C20009, 5%)
 	&__list
 		border-radius: var(--border) 0 0 var(--border)
-		background: var(--red)
 		overflow: hidden
 	&__item
 		width: 100%
 		padding: 20px 13px
-		border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+		border-bottom: 1px solid #D04248
 		display: flex
 		align-items: center
 		justify-content: center
@@ -194,6 +193,12 @@
 				background-size: contain
 				position: absolute
 				content: ""
+
+.anchore
+	position: relative
+	&__link
+		top: 0
+		position: absolute
 
 .swiper-button-prev, .swiper-button-next
 	top: 0
@@ -335,3 +340,31 @@
 		height: 50px
 		svg
 			width: 11px
+
+@media screen and (max-width: 767px)
+	.h1
+		font-size: 44px
+		line-height: 54px
+
+	.h2
+		font-size: 34px
+		line-height: 40px
+
+	.h4
+		font-size: 24px
+		line-height: 30px
+
+	.h5
+		font-size: 20px
+
+	.logo
+		&__text
+			font-size: 13px
+			margin-top: 4px
+
+	.list-line
+		ul
+			li
+				padding-left: 28px
+				&:before
+					width: 18px
