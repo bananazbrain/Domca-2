@@ -633,6 +633,10 @@ path, circle, rect, line {
   transform: scale(1);
 }
 
+.fancybox__thumbs {
+  display: none;
+}
+
 @media screen and (max-width: 1280px) {
   .h1 {
     font-size: 45px;

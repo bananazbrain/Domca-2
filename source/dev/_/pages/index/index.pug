@@ -9,7 +9,7 @@ block content
 		.side-panel__wrap
 			.side-panel__close
 			.side-panel__list
-				a.side-panel__item(href="")
+				a.side-panel__item(href="" download)
 					.side-panel__icon
 						img(src="_/uploads/icons/price.svg", alt="")
 					.side-panel__text Получить Прайс
@@ -17,11 +17,11 @@ block content
 					.side-panel__icon
 						img(src="_/uploads/icons/tel.svg", alt="")
 					.side-panel__text Перезвоните мне
-				a.side-panel__item(href="")
+				a.side-panel__item(href="#order")
 					.side-panel__icon
 						img(src="_/uploads/icons/dealer.svg", alt="")
 					.side-panel__text Стать Дилером
-				a.side-panel__item(href="https://wa.me/")
+				a.side-panel__item(href="https://wa.me/79519007000" target="_blank")
 					.side-panel__icon
 						img(src="_/uploads/icons/wh.svg", alt="")
 					.side-panel__text WhatsApp
@@ -42,7 +42,7 @@ block content
 						.intro__btn.btn.--red ПОЛУЧИТЬ ПРАЙС + КОММЕРЧЕСКОЕ
 						.intro__desc
 							.intro__desc-img
-								img(src="_/uploads/calc.png", alt="")
+								img(src="_/uploads/calc.png" srcset="_/uploads/calc-x2.png 2x", alt="")
 							.intro__desc-text Оставьте заявку и мы #[br]вышлем вам всю информацию #[br]на почту #[strong в течение 5 минут]
 				.intro__img.an.fadeIn-scale
 					img(src="_/uploads/intro-img.png" alt="" width="645" height="694")
@@ -120,7 +120,7 @@ block content
 		.case
 			.dealer__wrap.row
 				.dealer__img.an.fadeIn-scale
-					img(src="_/uploads/dealer-img.png", alt="" width="438" height="625")
+					img(src="_/uploads/dealer-img.png" srcset="_/uploads/dealer-img-x2.png 2x", alt="" width="437" height="625")
 				.dealer__info
 					.dealer__title.h3.an.fadeIn-up #[h3 Станьте дилером #[u в своем регионе]]
 					.dealer__subtitle.h5.an.fadeIn-up(data-timeout="0.1s") #[h5 Выгоды, которые вы получите:]
@@ -148,32 +148,32 @@ block content
 			.pros__list
 				.pros__item.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-1.png", alt="")
+						img(src="_/uploads/pros-1.png" srcset="_/uploads/pros-1-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Консалтинг]
 					.pros__text Консультации по построению #[br]продаж в регионе
 				.pros__item.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-2.png", alt="")
+						img(src="_/uploads/pros-2.png" srcset="_/uploads/pros-2-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Помощь в продажах]
 					.pros__text Готовые скрипты для работы #[br]с покупателями
 				.pros__item.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-3.png", alt="")
+						img(src="_/uploads/pros-3.png" srcset="_/uploads/pros-3-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Совместные акции]
 					.pros__text Проведение акций #[br]для повышения продаж
 				.pros__item.--sm.--br-mob.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-4.png", alt="")
+						img(src="_/uploads/pros-4.png" srcset="_/uploads/pros-4-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Рекламные шаблоны]
 					.pros__text Готовые шаблоны для оформления #[br]точки продаж (плакаты, каталоги, #[br]листовки и т.д.), материалы для сайта #[br]и социальных сетей
 				.pros__item.--sm.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-5.png", alt="")
+						img(src="_/uploads/pros-5.png" srcset="_/uploads/pros-5-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Продвижение]
 					.pros__text Настройка рекламных кампаний #[br]и реклама точек продаж дилера #[br]в Интернете
 				.pros__item.--sm.an.fadeIn-scale
 					.pros__img
-						img(src="_/uploads/pros-6.png", alt="")
+						img(src="_/uploads/pros-6.png" srcset="_/uploads/pros-6-x2.png 2x", alt="")
 					.pros__name.h6 #[h6 Рекомендованные #[br]розничные цены]
 					.pros__text Готовые скрипты для #[br]работы с покупателями
 
@@ -238,15 +238,15 @@ block content
 			.certs__main.an.fadeIn-up(data-timeout="0.1s")
 				.certs__slider.swiper
 					.certs__slider-wrap.swiper-wrapper
-						.certs__slider-slide.swiper-slide
+						a.certs__slider-slide.swiper-slide(href="" data-fancybox="certs" data-src="_/uploads/certs-1.jpg")
 							img(src="_/uploads/certs-1.jpg", alt="" width="404" height="578")
-						.certs__slider-slide.swiper-slide
+						a.certs__slider-slide.swiper-slide(href="" data-fancybox="certs" data-src="_/uploads/certs-1.jpg")
 							img(src="_/uploads/certs-1.jpg", alt="" width="404" height="578")
-						.certs__slider-slide.swiper-slide
+						a.certs__slider-slide.swiper-slide(href="" data-fancybox="certs" data-src="_/uploads/certs-1.jpg")
 							img(src="_/uploads/certs-1.jpg", alt="" width="404" height="578")
-						.certs__slider-slide.swiper-slide
+						a.certs__slider-slide.swiper-slide(href="" data-fancybox="certs" data-src="_/uploads/certs-1.jpg")
 							img(src="_/uploads/certs-1.jpg", alt="" width="404" height="578")
-						.certs__slider-slide.swiper-slide
+						a.certs__slider-slide.swiper-slide(href="" data-fancybox="certs" data-src="_/uploads/certs-1.jpg")
 							img(src="_/uploads/certs-1.jpg", alt="" width="404" height="578")
 				.certs__arrows
 					.certs__arrow.swiper-button-prev

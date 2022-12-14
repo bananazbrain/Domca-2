@@ -5,11 +5,22 @@ const mailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[
 
 document.addEventListener('DOMContentLoaded', function () {
   // FANCYBOX SETUP
-  // Fancybox.bind("[data-fancybox]", {
-  //   dragToClose: false,
-  //   autoFocus: false,
-  // });
+  Fancybox.bind("[data-fancybox]", {
+    dragToClose: false,
+    autoFocus: false,
+  });
 
+  Fancybox.bind("[data-fancybox='certs']", {
+    dragToClose: false,
+    autoFocus: false,
+    Toolbar: {
+      display: [
+        "zoom",
+        "fullscreen",
+        "close",
+      ]
+    }
+  });
 
   // ANIMATION
   let anBlocks = document.querySelectorAll('.an');
@@ -97,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesOffsetBefore: 0,
       centeredSlides: true,
       centeredSlidesBounds: true,
+      watchSlidesProgress: true,
       loop: true,
       speed: 1000,
       navigation: {
@@ -109,17 +121,17 @@ document.addEventListener('DOMContentLoaded', function () {
         clickable: true,
       },
       breakpoints: {
-        0: {
-        },
         768: {
           slidesPerView: 'auto',
           slidesOffsetBefore: -35,
         },
         992: {
+          slidesPerView: 'auto',
           spaceBetween: 60,
           slidesOffsetBefore: -50,
         },
         1281: {
+          slidesPerView: 'auto',
           spaceBetween: 100,
           slidesOffsetBefore: -65,
         }

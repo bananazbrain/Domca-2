@@ -6,14 +6,14 @@
 }
 .dealer__img {
   width: 100%;
-  max-width: 438px;
+  max-width: 437px;
 }
 .dealer__img picture, .dealer__img img {
   width: 100%;
   height: 100%;
 }
 .dealer__info {
-  width: calc( 100% - 438px );
+  width: calc( 100% - 437px );
   padding-left: 66px;
   margin-top: 30px;
 }
