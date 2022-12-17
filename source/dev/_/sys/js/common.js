@@ -104,48 +104,51 @@ document.addEventListener('DOMContentLoaded', function () {
   if (certsSlider) {
     let certsSliderSwiper = null;
 
-		setTimeout(()=>{
-			certsSliderSwiper = new Swiper(certsSlider, {
-				slidesPerView: 'auto',
-				spaceBetween: 112,
-				initialSlide: 1,
-				slidesOffsetBefore: -65,
-				centeredSlides: true,
-				// watchSlidesProgress: true,
-				speed: 1000,
-				navigation: {
-					prevEl: '.certs__arrow.swiper-button-prev',
-					nextEl: '.certs__arrow.swiper-button-next',
-				},
-				pagination: {
-					el: '.certs__pagination.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-				},
-				// breakpoints: {
-				//   0: {
-				//     slidesPerView: 1,
-				//     spaceBetween: 20,
-				//     slidesOffsetBefore: 0,
-				//   },
-				//   768: {
-				//     slidesPerView: 'auto',
-				//     slidesOffsetBefore: -35,
-				//   },
-				//   992: {
-				//     slidesPerView: 'auto',
-				//     spaceBetween: 60,
-				//     slidesOffsetBefore: -50,
-				//   },
-				//   1281: {
-				//     slidesPerView: 'auto',
-				//     spaceBetween: 100,
-				//     slidesOffsetBefore: -65,
-				//   }
-				// }
-			});
-		}, 3000);
-		
+    setTimeout(() => {
+      certsSliderSwiper = new Swiper(certsSlider, {
+        slidesPerView: 'auto',
+        spaceBetween: 112,
+        initialSlide: 1,
+        slidesOffsetBefore: -65,
+        centeredSlides: true,
+        speed: 1000,
+        navigation: {
+          prevEl: '.certs__arrow.swiper-button-prev',
+          nextEl: '.certs__arrow.swiper-button-next',
+        },
+        pagination: {
+          el: '.certs__pagination.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            slidesOffsetBefore: 0,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesOffsetBefore: 0,
+            spaceBetween: 20,
+            centeredSlides: false,
+          },
+          992: {
+            slidesPerView: 'auto',
+            slidesOffsetBefore: -50,
+            spaceBetween: 60,
+            centeredSlides: true,
+          },
+          1281: {
+            slidesPerView: 'auto',
+            slidesOffsetBefore: -65,
+            spaceBetween: 112,
+          }
+        }
+      });
+    }, 2000);
+
   }
 
   // VALIDATOR
