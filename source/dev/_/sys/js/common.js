@@ -102,45 +102,50 @@ document.addEventListener('DOMContentLoaded', function () {
   let certsSlider = document.querySelector('.certs__slider');
 
   if (certsSlider) {
-    let certsSliderSwiper = new Swiper(certsSlider, {
-      slidesPerView: 'auto',
-      spaceBetween: 112,
-      initialSlide: 1,
-      slidesOffsetBefore: -65,
-      centeredSlides: true,
-      // watchSlidesProgress: true,
-      speed: 1000,
-      navigation: {
-        prevEl: '.certs__arrow.swiper-button-prev',
-        nextEl: '.certs__arrow.swiper-button-next',
-      },
-      pagination: {
-        el: '.certs__pagination.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-      },
-      // breakpoints: {
-      //   0: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 20,
-      //     slidesOffsetBefore: 0,
-      //   },
-      //   768: {
-      //     slidesPerView: 'auto',
-      //     slidesOffsetBefore: -35,
-      //   },
-      //   992: {
-      //     slidesPerView: 'auto',
-      //     spaceBetween: 60,
-      //     slidesOffsetBefore: -50,
-      //   },
-      //   1281: {
-      //     slidesPerView: 'auto',
-      //     spaceBetween: 100,
-      //     slidesOffsetBefore: -65,
-      //   }
-      // }
-    });
+    let certsSliderSwiper = null;
+
+		setTimeout(()=>{
+			certsSliderSwiper = new Swiper(certsSlider, {
+				slidesPerView: 'auto',
+				spaceBetween: 112,
+				initialSlide: 1,
+				slidesOffsetBefore: -65,
+				centeredSlides: true,
+				// watchSlidesProgress: true,
+				speed: 1000,
+				navigation: {
+					prevEl: '.certs__arrow.swiper-button-prev',
+					nextEl: '.certs__arrow.swiper-button-next',
+				},
+				pagination: {
+					el: '.certs__pagination.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+				},
+				// breakpoints: {
+				//   0: {
+				//     slidesPerView: 1,
+				//     spaceBetween: 20,
+				//     slidesOffsetBefore: 0,
+				//   },
+				//   768: {
+				//     slidesPerView: 'auto',
+				//     slidesOffsetBefore: -35,
+				//   },
+				//   992: {
+				//     slidesPerView: 'auto',
+				//     spaceBetween: 60,
+				//     slidesOffsetBefore: -50,
+				//   },
+				//   1281: {
+				//     slidesPerView: 'auto',
+				//     spaceBetween: 100,
+				//     slidesOffsetBefore: -65,
+				//   }
+				// }
+			});
+		}, 3000);
+		
   }
 
   // VALIDATOR
