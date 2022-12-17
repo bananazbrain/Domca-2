@@ -103,13 +103,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (certsSlider) {
     let certsSliderSwiper = new Swiper(certsSlider, {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      slidesOffsetBefore: 0,
+      slidesPerView: 'auto',
+      spaceBetween: 112,
+      initialSlide: 1,
+      slidesOffsetBefore: -65,
       centeredSlides: true,
-      centeredSlidesBounds: true,
-      watchSlidesProgress: true,
-      loop: true,
+      // watchSlidesProgress: true,
       speed: 1000,
       navigation: {
         prevEl: '.certs__arrow.swiper-button-prev',
@@ -120,22 +119,27 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'bullets',
         clickable: true,
       },
-      breakpoints: {
-        768: {
-          slidesPerView: 'auto',
-          slidesOffsetBefore: -35,
-        },
-        992: {
-          slidesPerView: 'auto',
-          spaceBetween: 60,
-          slidesOffsetBefore: -50,
-        },
-        1281: {
-          slidesPerView: 'auto',
-          spaceBetween: 100,
-          slidesOffsetBefore: -65,
-        }
-      }
+      // breakpoints: {
+      //   0: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 20,
+      //     slidesOffsetBefore: 0,
+      //   },
+      //   768: {
+      //     slidesPerView: 'auto',
+      //     slidesOffsetBefore: -35,
+      //   },
+      //   992: {
+      //     slidesPerView: 'auto',
+      //     spaceBetween: 60,
+      //     slidesOffsetBefore: -50,
+      //   },
+      //   1281: {
+      //     slidesPerView: 'auto',
+      //     spaceBetween: 100,
+      //     slidesOffsetBefore: -65,
+      //   }
+      // }
     });
   }
 
