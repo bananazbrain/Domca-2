@@ -69,6 +69,9 @@
   .dealer__title u {
     display: block;
   }
+  .dealer__list ul li {
+    font-size: 17px;
+  }
   .dealer__btn {
     min-height: 100px;
     margin-top: 45px;
@@ -90,6 +93,7 @@
     display: inline-block;
   }
   .dealer__btn {
+    margin-top: 30px;
     min-height: 80px;
   }
   .dealer__img {

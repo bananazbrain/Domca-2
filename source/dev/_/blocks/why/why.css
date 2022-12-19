@@ -1,6 +1,6 @@
 .why__info {
   width: 100%;
-  max-width: 680px;
+  max-width: 700px;
   padding: 94px 0;
 }
 .why__title {
@@ -38,6 +38,9 @@
   .why__title {
     margin-bottom: 30px;
   }
+  .why__text {
+    font-size: 22px;
+  }
   .why__text p {
     margin-bottom: 20px;
   }
@@ -62,9 +65,9 @@
     margin-bottom: 20px;
   }
   .why__text {
-    font-size: 22px;
-    line-height: 32px;
-    padding-right: 45px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 41px;
   }
   .why__img {
     max-width: 400px;
@@ -80,9 +83,9 @@
     padding: 40px 0 0;
   }
   .why__text {
-    font-size: 20px;
-    line-height: 30px;
-    padding-right: 0;
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 18px;
   }
   .why__img {
     max-width: 340px;
@@ -100,6 +103,10 @@
   .why__text {
     font-size: 16px;
     line-height: 24px;
+    max-width: 320px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
   .why__text p {

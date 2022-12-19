@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 .type__item {
-  padding: 32px;
+  padding: 32px 20px;
   width: calc( 50% - 24px );
   background: var(--white);
   box-shadow: var(--shadow);
@@ -40,6 +40,10 @@
   }
   .type__img {
     height: 300px;
+  }
+  .type__text {
+    font-size: 15px;
+    line-height: 24px;
   }
   .type__text br {
     display: none;
@@ -120,6 +124,7 @@
     margin-bottom: 20px;
   }
   .type__text {
+    font-size: 16px;
     max-width: 315px;
   }
 }

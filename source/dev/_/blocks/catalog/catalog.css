@@ -60,7 +60,7 @@
     margin-bottom: 25px;
   }
   .catalog__text {
-    min-height: 120px;
+    font-size: 15px;
   }
   .catalog__btn {
     min-height: 66px;
@@ -81,8 +81,8 @@
     margin-bottom: 15px;
   }
   .catalog__text {
+    font-size: 16px;
     margin-bottom: 20px;
-    min-height: auto;
   }
   .catalog__temp {
     margin-bottom: 20px;
@@ -97,6 +97,12 @@
   }
   .catalog__img {
     max-width: 150px;
+  }
+  .catalog__text {
+    font-size: 14px;
+  }
+  .catalog__temp {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -119,9 +125,11 @@
     line-height: 30px;
   }
   .catalog__text {
+    font-size: 16px;
     margin-bottom: 28px;
   }
   .catalog__temp {
+    font-size: 16px;
     margin-bottom: 32px;
   }
   .catalog__btn {

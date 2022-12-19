@@ -36,6 +36,7 @@
     display: block;
   }
   .pros__list {
+    gap: 58px 38px;
     padding: 0;
   }
   .pros__img {
@@ -70,8 +71,8 @@
     margin-bottom: 20px;
   }
   .pros__text {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 @media screen and (max-width: 580px) {

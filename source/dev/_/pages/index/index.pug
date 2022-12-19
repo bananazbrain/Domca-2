@@ -86,7 +86,7 @@ block content
 							img(src="_/uploads/catalog-1.png" srcset="_/uploads/catalog-1-x2.png 2x", alt="" width="223" height="296")
 						.catalog__info.tac
 							.catalog__name Теплоноситель «DOMCA» -65⁰ #[i (основа МЭГ)]
-							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
+							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -65°C до +108°C]
 						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-meg65" href="javascript:;") Подробнее
 					.catalog__item
@@ -94,7 +94,7 @@ block content
 							img(src="_/uploads/catalog-2.png" srcset="_/uploads/catalog-2-x2.png 2x", alt="" width="223" height="296")
 						.catalog__info.tac
 							.catalog__name Теплоноситель «DOMCA» -30⁰ #[i (основа МЭГ)]
-							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
+							.catalog__text Произведён на основе этиленгликоля высшего сорта и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -30°C до +108°C]
 						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-meg30" href="javascript:;") Подробнее
 					.catalog__item
@@ -102,7 +102,7 @@ block content
 							img(src="_/uploads/catalog-3.png" srcset="_/uploads/catalog-3-x2.png 2x", alt="" width="223" height="296")
 						.catalog__info.tac
 							.catalog__name Теплоноситель «DOMCA» -65⁰ #[i (основа пропиленгликоль)]
-							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
+							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -65°C до +108°C]
 						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-prop65" href="javascript:;") Подробнее
 					.catalog__item
@@ -110,7 +110,7 @@ block content
 							img(src="_/uploads/catalog-4.png" srcset="_/uploads/catalog-4-x2.png 2x", alt="" width="223" height="296")
 						.catalog__info.tac
 							.catalog__name Теплоноситель «DOMCA» -30⁰ #[i (основа пропиленгликоль)]
-							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
+							.catalog__text Произведён на основе пропиленгликоля USP и дистиллированной воды с добавлением присадок.
 							.catalog__temp Диапазон температур #[strong от -30°C до +108°C]
 						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-prop30" href="javascript:;") Подробнее
 		.anchore__link#catalog
@@ -132,8 +132,7 @@ block content
 							li Возможность закупки с отсрочкой платежа, без предоплаты
 							li Отсутствие жёстких требований по объему продаж
 							li Маркетинговая поддержка
-					.dealer__btn-wrap
-						a.dealer__btn.btn.--red(data-fancybox data-src="#modal-dealer" href="javascript:;") Получить подробные условия
+					a.dealer__btn.btn.--red(data-fancybox data-src="#modal-dealer" href="javascript:;") Получить подробные условия
 		.dealer__bg.bg-img
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="760")
 		.dealer__bottom
@@ -202,34 +201,34 @@ block content
 						img(src="_/uploads/type-1.png" srcset="_/uploads/type-1-x2.png 2x", alt="")
 					.type__info
 						.type__name.h6 #[h6 Теплоносители в бочках #[br](50 и 210 литров)]
-						.type__text Это отличный вариант для обслуживающих компаний, которые занимаются монтажём и обслуживанием систем отопления — #[br]так как стоимость теплоносителя в бочке будет дешевле, #[br]чем в канистрах.
+						.type__text Это отличный вариант для обслуживающих компаний, которые занимаются монтажём и обслуживанием систем отопления — #[br]так как стоимость теплоносителя в бочке будет дешевле, #[br]чем в канистрах.
 				.type__item
 					.type__img
 						img(src="_/uploads/type-2.png" srcset="_/uploads/type-2-x2.png 2x", alt="")
 					.type__info
 						.type__name.h6 #[h6 Теплоносители в канистрах #[br](10 и 20 литров)]
-						.type__text Идеальный вариант, если вы планируете перепродавать теплоносители конечному потребителю. Например, этот вариант идеально подходит для строительных и сантехнических магазинов, строительных баз - когда нужно показать товар лицом.
+						.type__text Идеальный вариант, если вы планируете перепродавать теплоносители конечному потребителю. Например, этот вариант идеально подходит для строительных и сантехнических магазинов, строительных баз - когда нужно показать товар лицом.
 
 	+style('partners', 'blocks')
 	.partners
 		.case
 			.partners__title.h2.tac.an.fadeIn-up #[h2 Наши теплоносители используются #[br]на #[u крупнейших предприятиях страны]]
 			.partners__list
-				mixin partners(img)
+				mixin partners(img, imgx2)
 					.partners__item.an.fadeIn-scale
-						img(src=img, alt="")
-				+partners('_/uploads/partners-1.png')
-				+partners('_/uploads/partners-2.png')
-				+partners('_/uploads/partners-3.png')
-				+partners('_/uploads/partners-4.png')
-				+partners('_/uploads/partners-5.png')
-				+partners('_/uploads/partners-6.png')
-				+partners('_/uploads/partners-7.png')
-				+partners('_/uploads/partners-8.png')
-				+partners('_/uploads/partners-9.png')
-				+partners('_/uploads/partners-10.png')
-				+partners('_/uploads/partners-11.png')
-				+partners('_/uploads/partners-12.png')
+						img(src=img srcset=imgx2, alt="")
+				+partners('_/uploads/partners-1.png', '_/uploads/partners-1-x2.png 2x')
+				+partners('_/uploads/partners-2.png', '_/uploads/partners-2-x2.png 2x')
+				+partners('_/uploads/partners-3.png', '_/uploads/partners-3-x2.png 2x')
+				+partners('_/uploads/partners-4.png', '_/uploads/partners-4-x2.png 2x')
+				+partners('_/uploads/partners-5.png', '_/uploads/partners-5-x2.png 2x')
+				+partners('_/uploads/partners-6.png', '_/uploads/partners-6-x2.png 2x')
+				+partners('_/uploads/partners-7.png', '_/uploads/partners-7-x2.png 2x')
+				+partners('_/uploads/partners-8.png', '_/uploads/partners-8-x2.png 2x')
+				+partners('_/uploads/partners-9.png', '_/uploads/partners-9-x2.png 2x')
+				+partners('_/uploads/partners-10.png', '_/uploads/partners-10-x2.png 2x')
+				+partners('_/uploads/partners-11.png', '_/uploads/partners-11-x2.png 2x')
+				+partners('_/uploads/partners-12.png', '_/uploads/partners-12-x2.png 2x')
 
 	+style('certs', 'blocks')
 	.certs.bg
