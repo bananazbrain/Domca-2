@@ -4,18 +4,16 @@
 .certs__slider {
   max-width: 1180px;
   padding-top: 50px;
-  transition: 0.4s;
 }
 .certs__slider-wrap {
   height: 578px;
-  transition: 0.4s;
   align-items: center;
 }
 .certs__slider-slide {
   width: 275px;
   height: 402px;
-  border-radius: var(--border);
-  transition: 0.4s;
+  transition: 0.3s;
+  border-radius: var(--border-sm);
   overflow: hidden;
   cursor: pointer;
 }
@@ -35,6 +33,10 @@
   align-items: center;
   justify-content: space-between;
   position: absolute;
+  pointer-events: none;
+}
+.certs__arrow {
+  pointer-events: all;
 }
 .certs__pagination {
   margin-top: 28px;

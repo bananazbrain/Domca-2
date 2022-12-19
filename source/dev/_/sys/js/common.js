@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
         initialSlide: 1,
         slidesOffsetBefore: -65,
         centeredSlides: true,
+        preventInteractionOnTransition: true,
         speed: 1000,
         navigation: {
           prevEl: '.certs__arrow.swiper-button-prev',
