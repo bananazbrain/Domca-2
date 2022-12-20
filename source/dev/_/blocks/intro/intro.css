@@ -7,7 +7,7 @@
 .intro__info {
   z-index: 1;
   width: 100%;
-  max-width: 750px;
+  max-width: 760px;
   position: relative;
 }
 .intro__title {
@@ -17,8 +17,8 @@
   margin-bottom: 58px;
 }
 .intro__list ul li {
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 23px;
+  margin-bottom: 25px;
 }
 .intro__list ul li:last-child {
   margin-bottom: 0;
@@ -63,6 +63,7 @@
 .intro__desc-text {
   width: calc( 100% - 116px );
   padding-left: 20px;
+  margin-top: -5px;
   font-size: 15px;
   line-height: 20px;
   position: relative;
