@@ -202,6 +202,22 @@ path, circle, rect, line {
   color: var(--white);
   background: var(--red);
 }
+.btn.--wb {
+  color: var(--white);
+  background: #CB11AB;
+  box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0.55);
+}
+.btn.--wb:hover {
+  box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0);
+}
+.btn.--ozon {
+  color: var(--white);
+  background: #005BFF;
+  box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0.55);
+}
+.btn.--ozon:hover {
+  box-shadow: inset 0px 0px 28px rgba(255, 255, 255, 0);
+}
 
 @media screen and (max-width: 767px) {
   .btn {
@@ -378,7 +394,7 @@ path, circle, rect, line {
   z-index: 3;
   top: 50%;
   right: 0;
-  width: 104px;
+  width: 108px;
   opacity: 1;
   transform: translateY(-50%);
   transition: var(--transition);
@@ -660,6 +676,15 @@ path, circle, rect, line {
 .modal__field {
   margin-bottom: 10px;
 }
+.modal__btns {
+  justify-content: space-between;
+}
+.modal__btns .modal__btn {
+  width: calc( 50% - 5px );
+  min-height: 80px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
 .modal__btn {
   min-height: 91px;
 }
@@ -852,6 +877,16 @@ path, circle, rect, line {
   .modal__note-text {
     padding-left: 10px;
   }
+  .modal__btns {
+    flex-direction: column;
+  }
+  .modal__btns .modal__btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .modal__btns .modal__btn:last-child {
+    margin-bottom: 0;
+  }
   .modal.--catalog {
     padding: 26px;
     max-width: 700px;
@@ -905,6 +940,9 @@ path, circle, rect, line {
     font-size: 24px;
     line-height: 34px;
   }
+  .modal__title-md br {
+    display: block;
+  }
   .modal__preview {
     width: 100%;
     margin-bottom: 20px;
@@ -948,6 +986,10 @@ path, circle, rect, line {
   }
   .modal.--catalog .modal__btn {
     max-width: 100%;
+  }
+
+  .fancybox__slide {
+    padding: 60px 40px 40px;
   }
 }
 @media screen and (max-width: 580px) {

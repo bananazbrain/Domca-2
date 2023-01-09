@@ -30,7 +30,7 @@
 	&__desc
 		z-index: 1
 		right: 10px
-		max-width: 360px
+		max-width: 395px
 		display: flex
 		flex-wrap: wrap
 		align-items: center
@@ -48,10 +48,12 @@
 			position: absolute
 			content: ""
 		&-img
-			max-width: 116px
+			top: -15px
+			max-width: 158px
+			position: relative
 		&-text
-			width: calc( 100% - 116px )
-			padding-left: 20px
+			width: calc( 100% - 158px )
+			padding-left: 10px
 			margin-top: -5px
 			font-size: 15px
 			line-height: 20px
@@ -150,9 +152,9 @@
 			&:before
 				display: none
 			&-img
-				top: 0
-				right: 35px
-				max-width: 100px
+				top: -20px
+				right: 25px
+				max-width: 130px
 				position: absolute
 			&-text
 				width: 100%
@@ -185,9 +187,9 @@
 			padding: 10px 16px
 		&__desc
 			&-img
-				top: 5px
-				right: 5px
-				max-width: 88px
+				top: -5px
+				right: -5px
+				max-width: 110px
 			&-text
 				font-size: 13px
 				max-width: 320px
@@ -201,6 +203,10 @@
 
 @media screen and (max-width: 395px)
 	.intro
+		&__title
+			max-width: 335px
+			br
+				display: none
 		&__btn
 			font-size: 11px
 		&__desc

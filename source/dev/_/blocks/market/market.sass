@@ -1,0 +1,64 @@
+.market
+	padding: 50px 0
+	&__title
+		margin-bottom: 50px
+	&__list
+		justify-content: space-between
+	&__item
+		padding: 32px
+		width: calc( 50% - 22px )
+		background: var(--gray)
+		border-radius: var(--border)
+		display: flex
+		flex-direction: column
+		justify-content: center
+	&__btn
+		margin-top: 24px
+		min-height: 112px
+
+@media screen and (max-width: 1280px)
+	.market
+		&__item
+			width: calc( 50% - 10px )
+		&__img
+			height: 300px
+
+@media screen and (max-width: 991px)
+	.market
+		&__item
+			padding: 24px
+		&__img
+			height: 230px
+		&__btn
+			min-height: 90px
+
+@media screen and (max-width: 767px)
+	.market
+		&__title
+			margin-bottom: 30px
+			br
+				display: none
+		&__item
+			width: 100%
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+		&__img
+			height: 100%
+
+@media screen and (max-width: 580px)
+	.market
+		&__title
+			max-width: 280px
+			margin-bottom: 20px
+			margin-left: auto
+			margin-right: auto
+		&__img
+			max-width: 295px
+			margin-left: auto
+			margin-right: auto
+			img
+				height: 100%
+		&__btn
+			font-size: 16px
+			min-height: 80px

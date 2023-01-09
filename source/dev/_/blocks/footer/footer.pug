@@ -17,18 +17,18 @@ footer.footer
 				.footer__nav-list
 					ul
 						li
-							a(href="#") О теплоносителе
+							a(href="#quality") О теплоносителе
 						li
-							a(href="#") Наша продукция
+							a(href="#catalog") Каталог продукции
 						li
 							a(href="#") Дилерам
 					ul
 						li
-							a(href="#") Почему мы
+							a(href="#why") Почему мы
 						li
-							a(href="#") Сертификаты
+							a(href="#certs") Сертификаты
 						li
-							a(href="#") Контакты
+							a(href="#order") Контакты
 			.footer__act
 				.footer__title Остались вопросы?
 				.footer__text Оставьте заявку и мы свяжемся #[br]с вами для конусльтации
@@ -56,46 +56,6 @@ footer.footer
 							img(src="_/uploads/icons/tel-gray.svg", alt="")
 						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
 				button.modal__btn.btn.--red Перезвоните мне
-			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="politika.pdf" target="_blank") условиями обработки данных] и #[a(href="politika.pdf" target="_blank") политикой конфиденциальности]
-
-.modal.--static#modal-price
-	.modal__wrap
-		.modal__info.tac
-			.modal__title Получить прайс
-			.modal__subtitle Заполните форму и мы перезвоним вам #[br]в течение 15 минут
-		form.modal__form
-			.modal__fields
-				.modal__field.field.--required.--name
-					.field__wrap
-						.field__icon
-							img(src="_/uploads/icons/person-gray.svg", alt="")
-						input.field__area(type="text" name="name" placeholder="Введите ваше имя")
-				.modal__field.field.--required.--tel
-					.field__wrap
-						.field__icon
-							img(src="_/uploads/icons/tel-gray.svg", alt="")
-						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
-				button.modal__btn.btn.--red Получить прайс
-			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="politika.pdf" target="_blank") условиями обработки данных] и #[a(href="politika.pdf" target="_blank") политикой конфиденциальности]
-
-.modal.--static#modal-dealer
-	.modal__wrap
-		.modal__info.tac
-			.modal__title Стать дилером
-			.modal__subtitle Заполните форму и мы перезвоним вам #[br]в течение 15 минут
-		form.modal__form
-			.modal__fields
-				.modal__field.field.--required.--name
-					.field__wrap
-						.field__icon
-							img(src="_/uploads/icons/person-gray.svg", alt="")
-						input.field__area(type="text" name="name" placeholder="Введите ваше имя")
-				.modal__field.field.--required.--tel
-					.field__wrap
-						.field__icon
-							img(src="_/uploads/icons/tel-gray.svg", alt="")
-						input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
-				button.modal__btn.btn.--red Хочу стать дилером
 			.modal__policy Нажимая на кнопку вы соглашаетесь с #[a(href="politika.pdf" target="_blank") условиями обработки данных] и #[a(href="politika.pdf" target="_blank") политикой конфиденциальности]
 
 .modal.--catalog#modal-meg65
@@ -128,7 +88,9 @@ footer.footer
 				.modal__note-icon
 					img(src="_/uploads/icons/stat-3.svg", alt="")
 				.modal__note-text Диапазон температур эксплуатации #[strong от -65°C до +108°C]
-			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+			.modal__btns.row
+				a.modal__btn.btn.--ozon(href="https://www.ozon.ru/" target="_blank") КУПИТЬ НА OZON
+				a.modal__btn.btn.--wb(href="https://www.wildberries.ru/" target="_blank") КУПИТЬ НА WB
 
 .modal.--catalog#modal-meg30
 	.modal__wrap.row
@@ -160,7 +122,9 @@ footer.footer
 				.modal__note-icon
 					img(src="_/uploads/icons/stat-3.svg", alt="")
 				.modal__note-text Диапазон температур эксплуатации #[strong от -30°C до +108°C]
-			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+			.modal__btns.row
+				a.modal__btn.btn.--ozon(href="https://www.ozon.ru/" target="_blank") КУПИТЬ НА OZON
+				a.modal__btn.btn.--wb(href="https://www.wildberries.ru/" target="_blank") КУПИТЬ НА WB
 
 .modal.--catalog#modal-prop65
 	.modal__wrap.row
@@ -192,7 +156,9 @@ footer.footer
 				.modal__note-icon
 					img(src="_/uploads/icons/stat-3.svg", alt="")
 				.modal__note-text Диапазон температур эксплуатации #[strong от -65°C до +108°C]
-			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+			.modal__btns.row
+				a.modal__btn.btn.--ozon(href="https://www.ozon.ru/" target="_blank") КУПИТЬ НА OZON
+				a.modal__btn.btn.--wb(href="https://www.wildberries.ru/" target="_blank") КУПИТЬ НА WB
 
 .modal.--catalog#modal-prop30
 	.modal__wrap.row
@@ -224,7 +190,9 @@ footer.footer
 				.modal__note-icon
 					img(src="_/uploads/icons/stat-3.svg", alt="")
 				.modal__note-text Диапазон температур эксплуатации #[strong от -30°C до +108°C]
-			a.modal__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") Получить прайс
+			.modal__btns.row
+				a.modal__btn.btn.--ozon(href="https://www.ozon.ru/" target="_blank") КУПИТЬ НА OZON
+				a.modal__btn.btn.--wb(href="https://www.wildberries.ru/" target="_blank") КУПИТЬ НА WB
 
 .modal.--thanks#modal-thanks
 	.modal__wrap

@@ -9,41 +9,41 @@ block content
 		.side-panel__wrap
 			.side-panel__close
 			.side-panel__list
-				a.side-panel__item(data-fancybox data-src="#modal-price" href="javascript:;")
+				a.side-panel__item(href="#catalog")
 					.side-panel__icon
-						img(src="_/uploads/icons/price.svg", alt="")
-					.side-panel__text Получить Прайс
+						img(src="_/uploads/icons/file.svg", alt="")
+					.side-panel__text Перейти #[br]в каталог
 				a.side-panel__item(data-fancybox data-src="#modal-callback" href="javascript:;")
 					.side-panel__icon
 						img(src="_/uploads/icons/tel.svg", alt="")
 					.side-panel__text Перезвоните мне
-				a.side-panel__item(data-fancybox data-src="#modal-dealer" href="javascript:;")
+				a.side-panel__item(href="https://www.wildberries.ru/" target="_blank")
 					.side-panel__icon
-						img(src="_/uploads/icons/dealer.svg", alt="")
-					.side-panel__text Стать Дилером
-				a.side-panel__item(href="https://wa.me/79519007000" target="_blank")
+						img(src="_/uploads/icons/wb.svg", alt="")
+					.side-panel__text Купить на WB
+				a.side-panel__item(href="https://www.ozon.ru/" target="_blank")
 					.side-panel__icon
-						img(src="_/uploads/icons/wh.svg", alt="")
-					.side-panel__text WhatsApp
-
+						img(src="_/uploads/icons/ozon.svg", alt="")
+					.side-panel__text Купить #[br]на OZON
+	
 	+style('intro', 'blocks')
 	.intro.bg
 		.case
 			.intro__wrap.row
 				.intro__info.an.fadeIn-up
-					.intro__title.h1 #[h1 Станьте дилером теплоносителя #[u DOMCA] #[br]в вашем городе]
+					.intro__title.h1 #[h1 Теплоносители #[u DOMCA] #[br]сохранят тепло и уют #[br]в вашем доме]
 					.intro__list.list-line
 						ul
 							li Без посредников - напрямую от производителя
-							li Гарантия качества
-							li Маркетинговая поддержка
-							li Высокая маржинальность
+							li Под любые типы котлов
+							li Срок службы – 10 лет
+							li Экологичные и безопасные
 					.intro__price
-						a.intro__btn.btn.--red(data-fancybox data-src="#modal-price" href="javascript:;") ПОЛУЧИТЬ ПРАЙС + КОММЕРЧЕСКОЕ
+						a.intro__btn.btn.--red(href="#catalog")  Посмотреть каталог продукции
 						.intro__desc
 							.intro__desc-img
-								img(src="_/uploads/calc.png" srcset="_/uploads/calc-x2.png 2x", alt="")
-							.intro__desc-text Оставьте заявку и мы #[br]вышлем вам всю информацию #[br]на почту #[strong в течение 5 минут]
+								img(src="_/uploads/calc-btn.png" srcset="_/uploads/calc-btn-x2.png 2x", alt="")
+							.intro__desc-text #[strong Нажмите на кнопку] #[br]и выберите теплоноситель, который подойдет именно вам
 				.intro__img.an.fadeIn-scale
 					img(src="_/uploads/intro-img.png" srcset="_/uploads/intro-img-x2.png 2x", alt="" width="645" height="694")
 		.intro__bg.bg-img
@@ -115,73 +115,27 @@ block content
 						a.catalog__btn.btn.--b-red(data-fancybox data-src="#modal-prop30" href="javascript:;") Подробнее
 		.anchore__link#catalog
 
-	+style('dealer', 'blocks')
-	.dealer.bg.anchore
+	+style('market', 'blocks')
+	.market.pt0
 		.case
-			.dealer__wrap.row
-				.dealer__img.an.fadeIn-scale
-					img(src="_/uploads/dealer-img.png" srcset="_/uploads/dealer-img-x2.png 2x", alt="" width="437" height="625")
-				.dealer__info.an.fadeIn-up
-					.dealer__title.h3 #[h3 Станьте дилером #[u в своем регионе]]
-					.dealer__subtitle.h5 #[h5 Выгоды, которые вы получите:]
-					.dealer__list.list-check
-						ul
-							li Оптовая цена напрямую от производителя
-							li Отсутствие посредников - гарантия качества продукции
-							li Возможность стать единственным дилером в регионе
-							li Возможность закупки с отсрочкой платежа, без предоплаты
-							li Отсутствие жёстких требований по объему продаж
-							li Маркетинговая поддержка
-					a.dealer__btn.btn.--red(data-fancybox data-src="#modal-dealer" href="javascript:;") Получить подробные условия
-		.dealer__bg.bg-img
-			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="760")
-		.dealer__bottom
-			img(src="_/uploads/dealer-bottom.png", alt="" width="1920" height="358")
-		.anchore__link#dealer
-
-	+style('pros', 'blocks')
-	.pros
-		.case
-			.pros__title.h2.tac.an.fadeIn-up #[h2 Маркетинговая поддержка #[u всех партнеров]]
-			.pros__subtitle.tac.an.fadeIn-up(data-timeout="0.1s") Посмотрите, что вы получите, работая с нами
-			.pros__list
-				.pros__item.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-1.png" srcset="_/uploads/pros-1-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Консалтинг]
-					.pros__text Консультации по построению #[br]продаж в регионе
-				.pros__item.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-2.png" srcset="_/uploads/pros-2-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Помощь в продажах]
-					.pros__text Готовые скрипты для работы #[br]с покупателями
-				.pros__item.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-3.png" srcset="_/uploads/pros-3-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Совместные акции]
-					.pros__text Проведение акций #[br]для повышения продаж
-				.pros__item.--sm.--br-mob.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-4.png" srcset="_/uploads/pros-4-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Рекламные шаблоны]
-					.pros__text Готовые шаблоны для оформления #[br]точки продаж (плакаты, каталоги, #[br]листовки и т.д.), материалы для сайта #[br]и социальных сетей
-				.pros__item.--sm.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-5.png" srcset="_/uploads/pros-5-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Продвижение]
-					.pros__text Настройка рекламных кампаний #[br]и реклама точек продаж дилера #[br]в Интернете
-				.pros__item.--sm.an.fadeIn-scale
-					.pros__img
-						img(src="_/uploads/pros-6.png" srcset="_/uploads/pros-6-x2.png 2x", alt="")
-					.pros__name.h6 #[h6 Рекомендованные #[br]розничные цены]
-					.pros__text Готовые скрипты для #[br]работы с покупателями
+			.market__title.h2.tac.an.fadeIn-up #[h2 Приобретайте теплоноситель #[u DOMCA] #[br]в розницу на маркетплейсах по ссылкам ниже]
+			.market__wrap.an.fadeIn-up(data-timeout="0.1s")
+				.market__list.row
+					.market__item
+						.market__img
+							img(src="_/uploads/wb.png" srcset="_/uploads/wb-x2.png 2x", alt="" width="478" height="367")
+						a.market__btn.btn.--wb(href="https://www.wildberries.ru/" target="_blank") КУПИТЬ НА WB
+					.market__item
+						.market__img
+							img(src="_/uploads/ozon.png" srcset="_/uploads/ozon-x2.png 2x", alt="" width="478" height="367")
+						a.market__btn.btn.--ozon(href="https://www.ozon.ru/" target="_blank") КУПИТЬ НА OZON
 
 	+style('why', 'blocks')
 	.why.bg
 		.case
 			.why__wrap.row
 				.why__info
-					.why__title.h2.an.fadeIn-up #[h2 Почему стоит покупать #[u теплоносители DOMCA ?]]
+					.why__title.h2.an.fadeIn-up #[h2 Почему стоит покупать #[u теплоносители DOMCA?]]
 					.why__text.an.fadeIn-up(data-timeout="0.1s")
 						p Наша компания работает на рынке химической продукции #[br]с 2007 года. Производим охлаждающие жидкости, теплоносители, хладагенты на основе гликолей с 2009 года.
 						p Прямые контракты с производителями этиленгликоля #[br](ПАО «Сибур») и пропиленгликоля (Anhui, Shiida - Китай) позволяют производить продукцию высочайшего качества, #[br]в короткий срок и по минимальным ценам.
@@ -190,24 +144,6 @@ block content
 					img(src="_/uploads/why-img.png" srcset="_/uploads/why-img-x2.png 2x", alt="" width="521" height="828")
 		.why__bg.bg-img
 			img(src="_/uploads/why-bg.jpg", alt="" width="1920" height="828")
-
-	+style('type', 'blocks')
-	.type
-		.case
-			.type__title.h2.tac.an.fadeIn-up #[h2 Любая тара для #[u вашего удобства]]
-			.type__list.row.an.fadeIn-up(data-timeout="0.1s")
-				.type__item
-					.type__img
-						img(src="_/uploads/type-1.png" srcset="_/uploads/type-1-x2.png 2x", alt="")
-					.type__info
-						.type__name.h6 #[h6 Теплоносители в бочках #[br](50 и 210 литров)]
-						.type__text Это отличный вариант для обслуживающих компаний, которые занимаются монтажём и обслуживанием систем отопления — #[br]так как стоимость теплоносителя в бочке будет дешевле, #[br]чем в канистрах.
-				.type__item
-					.type__img
-						img(src="_/uploads/type-2.png" srcset="_/uploads/type-2-x2.png 2x", alt="")
-					.type__info
-						.type__name.h6 #[h6 Теплоносители в канистрах #[br](10 и 20 литров)]
-						.type__text Идеальный вариант, если вы планируете перепродавать теплоносители конечному потребителю. Например, этот вариант идеально подходит для строительных и сантехнических магазинов, строительных баз - когда нужно показать товар лицом.
 
 	+style('partners', 'blocks')
 	.partners
@@ -231,7 +167,7 @@ block content
 				+partners('_/uploads/partners-12.png', '_/uploads/partners-12-x2.png 2x')
 
 	+style('certs', 'blocks')
-	.certs.bg
+	.certs.bg.anchore
 		.case
 			.certs__title.h2.tac.an.fadeIn-up #[h2 Вся продукция #[u сертифицирована]]
 			.certs__main.an.fadeIn-up(data-timeout="0.1s")
@@ -259,11 +195,12 @@ block content
 				.certs__pagination.swiper-pagination
 		.certs__bg.bg-img
 			img(src="_/uploads/dealer-bg.jpg", alt="" width="1920" height="828")
+		.anchore__link#certs
 
 	+style('order', 'blocks')
 	.order.anchore
 		.case
-			.order__title.h2.tac.an.fadeIn-up #[h2 Хотите стать дилером?]
+			.order__title.h2.tac.an.fadeIn-up #[h2 Остались вопросы?]
 			.order__subtitle.tac.an.fadeIn-up(data-timeout="0.1s") Оставьте заявку в форме ниже и мы свяжемся с вами #[br]в течение 15 минут, чтобы обсудить все детали
 			form.order__form.an.fadeIn-up(data-timeout="0.15s")
 				.order__fields
@@ -278,7 +215,7 @@ block content
 								img(src="_/uploads/icons/tel-gray.svg", alt="")
 							input.field__area(type="tel" name="tel" placeholder="+7 (___) ___-__-__")
 					.order__field 
-						button.order__btn.btn.--red Хочу стать дилером
+						button.order__btn.btn.--red Получить конусльтацию
 				.order__policy Нажимая на кнопку вы соглашаетесь с #[a(href="politika.pdf" target="_blank") условиями обработки данных] и #[a(href="politika.pdf" target="_blank") политикой конфиденциальности]
 			.order__call.an.fadeIn-up
 				.order__call-title.h4.tac #[h4 Или позвоните нам по телефону]
