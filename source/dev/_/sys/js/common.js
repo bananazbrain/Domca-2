@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const inner = document.querySelector('.inner');
 const mailPattern = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
 
-document.addEventListener('DOMContentLoaded', function () {
+window.onload = () => {
   // FANCYBOX SETUP
   Fancybox.bind("[data-fancybox]", {
     dragToClose: false,
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
-    }, 2000);
+    }, 1000);
 
   }
 
@@ -244,15 +244,13 @@ document.addEventListener('DOMContentLoaded', function () {
           xhr.send(formData);
 
           xhr.onload = function () {
-            if (xhr.response == "1") {
-              Fancybox.close();
+            Fancybox.close();
 
-              Fancybox.show([{
-                src: '#modal-thanks',
-                type: 'inline'
-              }]);
+            Fancybox.show([{
+              src: '#modal-thanks',
+              type: 'inline'
+            }]);
 
-            }
           }
           event.preventDefault();
 
@@ -262,4 +260,4 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
-})
+}

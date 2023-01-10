@@ -115,13 +115,14 @@
 		&__title
 			margin-bottom: 25px
 		&__btn
+			font-size: 15px
 			padding: 10px 20px
 			max-width: 450px
 			min-height: 95px
 		&__desc
-			right: 0
+			right: -15px
 			&-text
-				padding-left: 10px
+				font-size: 14px
 		&__img
 			top: 0
 			right: 0
@@ -182,14 +183,26 @@
 					line-height: 24px
 					padding-left: 22px
 		&__btn
+			max-width: 345px
+			margin-left: auto
+			margin-right: auto
 			font-size: 12px
 			letter-spacing: .9px
-			padding: 10px 16px
+			padding: 10px 80px 10px 16px
+			&:before
+				top: 50%
+				margin-top: -10px
+				right: -35px
+				width: 124px
+				height: 97px
+				transform: translateY(-50%)
+				background: url('../../uploads/calc-btn.png')
+				background-size: contain
+				position: absolute
+				content: ""
 		&__desc
 			&-img
-				top: -5px
-				right: -5px
-				max-width: 110px
+				display: none
 			&-text
 				font-size: 13px
 				max-width: 320px
@@ -207,8 +220,6 @@
 			max-width: 335px
 			br
 				display: none
-		&__btn
-			font-size: 11px
 		&__desc
 			&-img
 				right: -5px
